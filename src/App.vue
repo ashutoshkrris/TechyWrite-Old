@@ -29,7 +29,7 @@ export default {
           TechyWrite
         </h1>
       </section>
-      <a class="github-corner" href="https://github.com/ashutoshkrris/hacktoberfest-swag" target="_blank"
+      <a class="github-corner" href="https://github.com/ashutoshkrris/TechyWrite" target="_blank"
         rel="noopener">
         <GitHubSVG />
       </a>
