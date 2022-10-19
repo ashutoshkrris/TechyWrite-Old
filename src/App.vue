@@ -43,6 +43,12 @@ export default {
     };
     fetchContributors();
 
+    window.addEventListener('keydown', (event) => {
+      if (event.ctrlKey && event.key === '/') {
+        document.querySelector('#search-bar').focus();
+      }
+    })
+
     return { opportunitiesData, checked, contributors, searchTerm };
   },
   components: { Twitter, GitHub, GitHubSVG },
@@ -110,6 +116,7 @@ export default {
             </svg>
           </span>
           <input type="text"
+            id="search-bar"
             class="px-4 py-2 bg-gray-800 text-gray-300 outline-none rounded-full w-[16rem] -ml-8 -mr-[4.5rem] pl-12 pr-20 focus:ring focus:ring-psybeam/80"
             @input="searchTerm = $event.target.value">
           <span class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none">
