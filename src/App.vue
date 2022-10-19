@@ -24,7 +24,7 @@ export default {
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
-        <img src="../public/image/Symbol.jpg" class="object-cover w-16 h-16 rounded-full" />
+        <img src="..\public\Image\techywrite(red).png" class="object-cover w-16 h-16 rounded-full" />
         <h1 class="mt-2 text-4xl md:text-5xl font-semibold text-center text-white">
           TechyWrite
         </h1>
