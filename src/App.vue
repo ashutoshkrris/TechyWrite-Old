@@ -26,7 +26,7 @@ export default {
       <section class="flex flex-wrap justify-center gap-4 mb-5">
         <img src="../public/image/Symbol.jpg" class="object-cover w-16 h-16 rounded-full" />
         <h1 class="mt-2 text-4xl md:text-5xl font-semibold text-center text-white">
-          Paid Writing Opportunities
+          TechyWrite
         </h1>
       </section>
       <a class="github-corner" href="https://github.com/ashutoshkrris/hacktoberfest-swag" target="_blank"

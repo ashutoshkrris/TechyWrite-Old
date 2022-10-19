@@ -1,4 +1,4 @@
-# Paid Technical Writing Opportunities
+# TechyWrite
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
