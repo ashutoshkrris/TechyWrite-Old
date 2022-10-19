@@ -17,13 +17,13 @@ Star and Fork the Repo 🌟 and this will keep us motivated.
 Clone the repository
 
 ```bash
-git clone https://github.com/ashutoshkrris/paid-technical-writing-opportunities.git
+git clone https://github.com/ashutoshkrris/TechyWrite.git
 ```
 
 Change the working directory
 
 ```bash
-cd paid-technical-writing-opportunities
+cd TechyWrite
 ```
 
 Install dependencies
@@ -43,7 +43,7 @@ npm run dev
 Found a paid technical writing opportunity we don't have yet? You can easily add it using the following steps:
 
 1. Go to the opportunities list JSON file:
-   https://github.com/ashutoshkrris/paid-technical-writing-opportunities/blob/master/src/data.json
+   https://github.com/ashutoshkrris/TechyWrite/blob/master/src/data.json
 
 2. Add an object to it as follows:
 
