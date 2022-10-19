@@ -1,0 +1,871 @@
+[
+  {
+    "name": "Adeva",
+    "link": "https://adevait.com/write-for-us",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Looking for technical guides, thought leadership content, and resources for Engineering Managers.",
+    "categories": ["Infrastructure", "DevOps", "Soft Skills"]
+  },
+  {
+    "name": "Agora",
+    "link": "https://www.agora.io/en/agora-content-contributor-program/",
+    "publication": "Publication",
+    "rate": "$250 for first-time authors",
+    "description": "Bonus swag and payment based on signups from your article.",
+    "categories": ["APIs"]
+  },
+  {
+    "name": "Airbyte",
+    "link": "https://airbyte.com/write-for-the-community",
+    "publication": "Publication",
+    "rate": "$900 for first-time authors",
+    "description": "Articles must feature Airbyte integrations.",
+    "categories": ["Infrastructure", "Open Source"]
+  },
+  {
+    "name": "Alan AI",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSfLGZO7fDt4OGIWVjNYIStkXrog3teq19qmeFErujQOtoWfFA/viewform",
+    "publication": "Publication",
+    "rate": "$50 - $250 for first-time authors",
+    "description": "Aricles must relate to Alan AI platform.",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "Ambassador Labs",
+    "link": "https://www.getambassador.io/write-for-us/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "",
+    "categories": ["Kubernetes", "Open Source"]
+  },
+  {
+    "name": "AppSignal",
+    "link": "https://blog.appsignal.com/write-for-us",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Mid-level to senior content on Node.js, Elixir, and Ruby.",
+    "categories": ["Full-Stack Development"]
+  },
+  {
+    "name": "Appsmith",
+    "link": "https://blog.appsmith.com/launching-the-appsmith-writers-program",
+    "publication": "Publication",
+    "rate": "$200 - $400 for first-time authors",
+    "description": "Must include Appsmith technologies in the tutorial.",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "Apress",
+    "link": "https://www.apress.com/gp/write-for-us",
+    "publication": "Publisher",
+    "rate": "",
+    "description": "Apress specializes in Microsoft, Apple, and enterprise technologies.",
+    "categories": []
+  },
+  {
+    "name": "Arctype",
+    "link": "https://blog.arctype.com/contribute/",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "May provide additional bonuses for well-performing posts.",
+    "categories": ["Back-End Development", "Data Science"]
+  },
+  {
+    "name": "Argot",
+    "link": "https://argot.dev/writers",
+    "publication": "Agency",
+    "rate": "$600 for first-time authors",
+    "description": "",
+    "categories": [
+      "Front-End Development",
+      "Back-End Development",
+      "Data Science",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "Auth0",
+    "link": "https://auth0.com/apollo-program",
+    "publication": "Publication",
+    "rate": "$450 for first-time authors",
+    "description": "Articles must implement some part of the Auth0 spec in any programming language. The program offers swag gifts to multi-time authors.",
+    "categories": ["Authentication"]
+  },
+  {
+    "name": "Bejamas",
+    "link": "https://bejamas.io/paid-writing-program/",
+    "publication": "Agency",
+    "rate": "",
+    "description": "Payment varies by project scope",
+    "categories": ["Front-End Development", "JAMstack"]
+  },
+  {
+    "name": "ButterCMS",
+    "link": "https://buttercms.com/blog/",
+    "publication": "Publication",
+    "rate": "$250 - $350 for first-time authors",
+    "description": "",
+    "categories": ["DevOps", "Full-Stack Development"]
+  },
+  {
+    "name": "CircleCI",
+    "link": "https://circleci.com/blog/guest-writer-program/",
+    "publication": "Publication",
+    "rate": "$325 for first-time authors",
+    "description": "Also provides physical CircleCI swag with your first post.",
+    "categories": ["Infrastructure"]
+  },
+  {
+    "name": "Civo",
+    "link": "https://www.civo.com/write-for-us",
+    "publication": "Publication",
+    "rate": "$300 - $500 for first-time authors",
+    "description": "",
+    "categories": ["Infrastructure", "Kubernetes"]
+  },
+  {
+    "name": "CloudCannon",
+    "link": "https://cloudcannon.com/blog/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Hiring for one-off pieces or continuous writing opportunities.",
+    "categories": ["Front-End Development", "JAMstack"]
+  },
+  {
+    "name": "CodeCov",
+    "link": "https://about.codecov.io/write-for-us/",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "",
+    "categories": ["DevOps", "Testing"]
+  },
+  {
+    "name": "CodeSee",
+    "link": "https://learn.codesee.io/guest-author-program/",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "Looking for content on CodeSee tools, technical reviews, and code quality",
+    "categories": ["Programming"]
+  },
+  {
+    "name": "CodeSubmit",
+    "link": "https://codesubmit.io/blog/",
+    "publication": "Publication",
+    "rate": "$250 for first-time authors",
+    "description": "",
+    "categories": ["Technical Interviews"]
+  },
+  {
+    "name": "Codiga",
+    "link": "https://www.codiga.io/write-for-us/",
+    "publication": "Publication",
+    "rate": "$100 - $150 for first-time authors",
+    "description": "Asks authors to publish content on the author's own site, which Codiga will then promote.",
+    "categories": ["Programming"]
+  },
+  {
+    "name": "CodingSight",
+    "link": "https://codingsight.com",
+    "publication": "Publication",
+    "rate": "$100 - $250 for first-time authors",
+    "description": "Send proposals directly to the listed contact.",
+    "categories": ["SQL", "Back-End Development", "Infrastructure"]
+  },
+  {
+    "name": "Cohesive",
+    "link": "https://cohesiveso.notion.site/Cohesive-Writers-Program-114332379ec8444f8ca0ee774b805253",
+    "publication": "Publication",
+    "rate": "$200 - $500 for first-time authors",
+    "description": "",
+    "categories": ["Infrastructure", "Kubernetes"]
+  },
+  {
+    "name": "Colabra",
+    "link": "https://www.colabra.app/blog/",
+    "publication": "Publication",
+    "rate": "$300 - $600 for first-time authors",
+    "description": "Lab science, not computer science.",
+    "categories": ["Lab Management", "Data Science"]
+  },
+  {
+    "name": "Content Turbine",
+    "link": "https://www.contentturbine.com/freelance",
+    "publication": "Agency",
+    "rate": "$250 - $300 for first-time authors",
+    "description": "",
+    "categories": ["Data Science", "Programming", "Artificial Intelligence"]
+  },
+  {
+    "name": "ContentLab",
+    "link": "https://contentlab.io/writeforus/",
+    "publication": "Agency",
+    "rate": "$200 - $700 for first-time authors",
+    "description": "Quoted rate range is for articles, depending on length. Also offers paid opportunities for outlining and content planning, plus higher fees for larger projects.",
+    "categories": [
+      "Front-End Development",
+      "Back-End Development",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "CSS Tricks",
+    "link": "https://css-tricks.com/guest-writing-for-css-tricks/",
+    "publication": "Publication",
+    "rate": "$300 - $400 for first-time authors",
+    "description": "",
+    "categories": ["Front-End Development"]
+  },
+  {
+    "name": "Cube Dev",
+    "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Provides a list of suggested topics.",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "DeepSource",
+    "link": "https://deepsource.io/tech-writer/",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "",
+    "categories": ["DevOps"]
+  },
+  {
+    "name": "Dev Spotlight",
+    "link": "https://www.devspotlight.com/jobs/",
+    "publication": "Agency",
+    "rate": "$600 for first-time authors",
+    "description": "Pay may far exceed $600 based on scope & experience. Requires proven technical expertise plus writing skills.",
+    "categories": ["Infrastructure", "DevOps", "Full-Stack Development"]
+  },
+  {
+    "name": "Digital Ocean",
+    "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
+    "publication": "Publication",
+    "rate": "$300 - $400 for first-time authors",
+    "description": "Matches payments with donations to tech-focused charities. Further opportunities for paid updates to existing tutorials.",
+    "categories": ["Infrastructure", "Open Source"]
+  },
+  {
+    "name": "Draft.dev",
+    "link": "https://draft.dev/#write",
+    "publication": "Agency",
+    "rate": "$315 - $578 for first-time authors",
+    "description": "Available topics are sent out every week and writers can claim any they're a good fit for.",
+    "categories": ["Full-Stack Development", "Data Science", "DevOps"]
+  },
+  {
+    "name": "Earthly",
+    "link": "https://earthly.dev/blog/write-for-us/",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "Articles will be promoted on their Twitter account and posted to Hacker News.",
+    "categories": ["Open Source", "Back-End Development", "Infrastructure"]
+  },
+  {
+    "name": "Editmode",
+    "link": "https://editmode.com",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "Articles must implement some part of the Editmode API or client libraries in any programming language.",
+    "categories": ["APIs"]
+  },
+  {
+    "name": "Enlear",
+    "link": "https://www.enlear.com/",
+    "publication": "Agency",
+    "rate": "$50 - $150 for first-time authors",
+    "description": "Enlear also offers opportunities for content strategy and editorial roles.",
+    "categories": ["Full-Stack Development", "Programming", "Open Source"]
+  },
+  {
+    "name": "Envato Tuts+",
+    "link": "https://tutsplus.com/teach",
+    "publication": "Publication",
+    "rate": "",
+    "description": "Also buys video courses of 30 minutes or longer.",
+    "categories": ["Programming", "Design"]
+  },
+  {
+    "name": "Fauna",
+    "link": "https://fauna.com/blog/write-with-fauna",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "Must use FaunaDB. Also provides Fauna swag to authors.",
+    "categories": ["Full-Stack Development"]
+  },
+  {
+    "name": "Figment",
+    "link": "https://www.notion.so/Contributing-to-Figment-Learn-d8ff9cdc32ca4b58838d81d07eab49bd",
+    "publication": "Publication",
+    "rate": "$100 - $1000 for first-time authors",
+    "description": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials.",
+    "categories": ["Crypto"]
+  },
+  {
+    "name": "Fly",
+    "link": "https://github.com/superfly/fly#write-for-fly",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "",
+    "categories": ["Infrastructure"]
+  },
+  {
+    "name": "Hashnode",
+    "link": "https://web3.hashnode.com/contribute-to-the-web3-blog",
+    "publication": "Publication",
+    "rate": "$150 - $400 for first-time authors",
+    "description": "Warning: asks for an unpaid prompted 300-word writing sample during the application.",
+    "categories": ["Crypto"]
+  },
+  {
+    "name": "Hasura",
+    "link": "https://hasura.io/blog/the-hasura-technical-writer-program/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Tutorials must include the Hasura GraphQL engine.",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "Hevo",
+    "link": "https://community.hevodata.com/write-for-hevo",
+    "publication": "Publication",
+    "rate": "$100 for first-time authors",
+    "description": "",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "Hit Subscribe",
+    "link": "https://www.hitsubscribe.com/apply-to-be-an-author/",
+    "publication": "Agency",
+    "rate": "$100 - $400 for first-time authors",
+    "description": "",
+    "categories": []
+  },
+  {
+    "name": "Honeybadger",
+    "link": "https://www.honeybadger.io/blog/write-for-us/",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "Developer-friendly writing and editing process using Markdown and GitHub. Only accepts Ruby, PHP, JS content.",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "Hygraph (formerly GraphCMS)",
+    "link": "https://hygraph.com/write-for-hygraph",
+    "publication": "Publication",
+    "rate": "",
+    "description": "Payment varies by article. Pitches should include Hygraph.",
+    "categories": ["Front-End Development", "Back-End Development"]
+  },
+  {
+    "name": "ImageKit",
+    "link": "https://imagekit.io/blog/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Accepts articles on ImageKit technologies and web image optimization.",
+    "categories": ["Infrastructure"]
+  },
+  {
+    "name": "Infantica",
+    "link": "https://infatica.io/contribute/",
+    "publication": "Publication",
+    "rate": "$100 for first-time authors",
+    "description": "Also donates to tech-focused charities for articles.",
+    "categories": ["Web Scraping"]
+  },
+  {
+    "name": "Initial Commit",
+    "link": "https://initialcommit.com/write-for-us",
+    "publication": "Publication",
+    "rate": "$62.5 for first-time authors",
+    "description": "",
+    "categories": ["Full-Stack Development", "Programming"]
+  },
+  {
+    "name": "Kili technology",
+    "link": "https://github.com/kili-technology/kili-blogger-program",
+    "publication": "Publication",
+    "rate": "$100 - $200 for first-time authors",
+    "description": "",
+    "categories": ["Data Science", "Machine Learning"]
+  },
+  {
+    "name": "Linode",
+    "link": "https://www.linode.com/lp/write-for-linode/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Known to pay much higher rates to trusted repeat authors. Further opportunities for paid updates to existing tutorials.",
+    "categories": ["Infrastructure", "Open Source"]
+  },
+  {
+    "name": "LogRocket",
+    "link": "https://blog.logrocket.com/become-a-logrocket-guest-author-7d970eb673f9/",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "",
+    "categories": ["Front-End Development"]
+  },
+  {
+    "name": "LWN",
+    "link": "https://lwn.net/op/AuthorGuide.lwn",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Authors retain copyright, CC BY-SA 4.0 after 2 weeks exclusivity. Experienced authors and ambitious projects earn more.",
+    "categories": ["Linux News"]
+  },
+  {
+    "name": "Magalix",
+    "link": "https://www.magalix.com/the-sac-writers-club",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "",
+    "categories": ["Open Source", "DevOps", "Infrastructure"]
+  },
+  {
+    "name": "Magic Link",
+    "link": "https://magic-fortmatic.typeform.com/to/Wgzsocor",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Must use magic.link auth API in articles.",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "Make Use Of",
+    "link": "https://www.makeuseof.com/contributor/",
+    "publication": "Publication",
+    "rate": "$120 for first-time authors",
+    "description": "",
+    "categories": ["Consumer Tech"]
+  },
+  {
+    "name": "Manning",
+    "link": "https://www.manning.com/write-for-us",
+    "publication": "Publisher",
+    "rate": "$10% with an advance, 25% on ebook sales for first-time authors",
+    "description": "Manning is a longstanding independent publisher known for its MEAP process for publishing books as they're written.",
+    "categories": []
+  },
+  {
+    "name": "Mattermost",
+    "link": "https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/community-content-program",
+    "publication": "Publication",
+    "rate": "$250 - $350 for first-time authors",
+    "description": "The docs mention that exceptionally detailed content about prevalent technologies can earn up to $500.",
+    "categories": ["DevOps", "Full-Stack Development"]
+  },
+  {
+    "name": "Medusa",
+    "link": "https://medusajs.notion.site/Write-for-us-74a2bf43b4ce43eeba200382f599321a",
+    "publication": "Publication",
+    "rate": "$100 - $200 for first-time authors",
+    "description": "Will help guide your writing and have our own internal technical writer assist you",
+    "categories": ["Back-End Development", "Ecommerce", "Open Source"]
+  },
+  {
+    "name": "memphis.dev",
+    "link": "https://forms.gle/EJvfgLGivUzFMfcY9",
+    "publication": "Publication",
+    "rate": "$500 - $800 for first-time authors",
+    "description": "Write in-depth pieces relevant to memphis.dev in Go",
+    "categories": ["Back-End Development", "Full-Stack Development"]
+  },
+  {
+    "name": "MSSQL Tips",
+    "link": "https://www.mssqltips.com/contribute/",
+    "publication": "Publication",
+    "rate": "$160 for first-time authors",
+    "description": "Microsoft SQL Server only.",
+    "categories": ["SQL"]
+  },
+  {
+    "name": "Neptune",
+    "link": "https://neptune.ai/write-for-us",
+    "publication": "Publication",
+    "rate": "$200 - $500 for first-time authors",
+    "description": "Also pays $50-150 for non-technical blog posts.",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "neverinstall",
+    "link": "https://blog.neverinstall.com/neverinstall-technical-writer-program",
+    "publication": "Publication",
+    "rate": "$100 - $250 for first-time authors",
+    "description": "neverinstall offers a way to stream apps to browser and seeks relevant technical content",
+    "categories": ["Back-End Development", "DevOps"]
+  },
+  {
+    "name": "No Starch Press",
+    "link": "https://nostarch.com/writeforus",
+    "publication": "Publisher",
+    "rate": "$15% or 10% with $8,000 advance for first-time authors",
+    "description": "No Starch Press is a longstanding independent publisher known for print quality and strong content.",
+    "categories": []
+  },
+  {
+    "name": "NoteBook Share",
+    "link": "https://www.nbshare.io/new-post/",
+    "publication": "Publication",
+    "rate": "$100 - $150 for first-time authors",
+    "description": "Publishes Jupyter-style data science notebooks.",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "O'Reilly Media",
+    "link": "https://www.oreilly.com/work-with-us.html",
+    "publication": "Publisher",
+    "rate": "",
+    "description": "O'Reilly Media is the largest publisher of programming content and offers a wide variety of opportunities.",
+    "categories": []
+  },
+  {
+    "name": "Okteto",
+    "link": "https://okteto.com/tech-writer/",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto.",
+    "categories": ["Kubernetes"]
+  },
+  {
+    "name": "OneSignal",
+    "link": "https://onesignal.com/guest-author-program",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "",
+    "categories": ["Mobile Development"]
+  },
+  {
+    "name": "Paperspace",
+    "link": "https://blog.paperspace.com/write-for-paperspace/",
+    "publication": "Publication",
+    "rate": "$200 - $300 for first-time authors",
+    "description": "",
+    "categories": ["Data Science"]
+  },
+  {
+    "name": "PHP Architect",
+    "link": "https://www.phparch.com/editorial/write-for-us/",
+    "publication": "Publication",
+    "rate": "$175 for first-time authors",
+    "description": "",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "Postmark",
+    "link": "https://postmarkapp.com/write-for-us",
+    "publication": "Publication",
+    "rate": "$200 - $300 for first-time authors",
+    "description": "",
+    "categories": ["Back-End Development"]
+  },
+  {
+    "name": "QuickNode",
+    "link": "https://quicknode.notion.site/quicknode/QuickNode-Authorship-Program-d808a87ee50b48c9a16ed19b13e09115",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "Tutorials should cover building with one or more web3 technologies.",
+    "categories": ["Crypto"]
+  },
+  {
+    "name": "raywenderlich.com",
+    "link": "https://www.raywenderlich.com/11455688-write-for-us",
+    "publication": "Publication",
+    "rate": "$400 for first-time authors",
+    "description": "Focuses on Swift and Unity. Rigorous multi-stage editing process, strong community. Formats also include books, video courses, and more.",
+    "categories": ["Mobile Development", "Back-End Development"]
+  },
+  {
+    "name": "Real Python",
+    "link": "https://realpython.com/write-for-us/",
+    "publication": "Publication",
+    "rate": "",
+    "description": "Site calls working with them a \"significant time commitment\" for a \"paid part-time position.\"",
+    "categories": ["Back-End Development", "Programming", "Soft Skills"]
+  },
+  {
+    "name": "RunX",
+    "link": "https://blog.runx.dev/announcing-runxs-technical-writer-program-ea3790f0a80",
+    "publication": "Publication",
+    "rate": "$150 - $200 for first-time authors",
+    "description": "Seeking tutorials on Opta, pays an extra 100 dollars for Opta tutorials that hit 1000 views in 4 weeks.",
+    "categories": ["Infrastructure", "DevOps"]
+  },
+  {
+    "name": "Sanity.io",
+    "link": "https://www.sanity.io/guest-authorship",
+    "publication": "Publication",
+    "rate": "$250 for first-time authors",
+    "description": "Article topics should relate to the Sanity.io platform.",
+    "categories": ["Front-End Development"]
+  },
+  {
+    "name": "Section.io",
+    "link": "https://github.com/section-engineering-education/engineering-education",
+    "publication": "Publication",
+    "rate": "$50 - $150 for first-time authors",
+    "description": "Section takes submissions specifically from university-level computer science students.",
+    "categories": []
+  },
+  {
+    "name": "SigNoz",
+    "link": "https://signoz.io/technical-writer-program/",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "",
+    "categories": ["DevOps", "Infrastructure"]
+  },
+  {
+    "name": "Simple Talk",
+    "link": "https://www.red-gate.com/simple-talk/write-for-us/",
+    "publication": "Publication",
+    "rate": "$350 for first-time authors",
+    "description": "",
+    "categories": ["SQL", "Back-End Development", "DevOps"]
+  },
+  {
+    "name": "SitePoint",
+    "link": "https://www.sitepoint.com/write-for-us/",
+    "publication": "Publication",
+    "rate": "$150 - $300 for first-time authors",
+    "description": "SitePoint is a well-established publication with different editors for different topics, with varying requirements. Large projects pay more.",
+    "categories": ["Front-End Development", "No-Code Tools", "Design"]
+  },
+  {
+    "name": "Smashing Magazine",
+    "link": "https://www.smashingmagazine.com/write-for-us/",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Smashing pays $250 for articles after your first. They also have conference speaking and long-form content opportunities.",
+    "categories": ["Front-End Development", "Design"]
+  },
+  {
+    "name": "Software Engineering Daily",
+    "link": "https://softwareengineeringdaily.com/write/",
+    "publication": "Publication",
+    "rate": "",
+    "description": "",
+    "categories": []
+  },
+  {
+    "name": "Solace",
+    "link": "https://solace.com/scholars/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "Articles must feature Solace technologies.",
+    "categories": ["APIs"]
+  },
+  {
+    "name": "Soshace",
+    "link": "https://soshace.com/write-for-us/",
+    "publication": "Publication",
+    "rate": "$100 for first-time authors",
+    "description": "",
+    "categories": []
+  },
+  {
+    "name": "SQL Shack",
+    "link": "https://www.sqlshack.com/about-us/",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Microsoft SQL Server only, 1250+ words plus code samples, 3 images per article.",
+    "categories": ["SQL"]
+  },
+  {
+    "name": "SUSE Writers Network (SUSE Rancher)",
+    "link": "https://www.suse.com/writing-program/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "",
+    "categories": ["DevOps", "Infrastructure"]
+  },
+  {
+    "name": "Sweetcode",
+    "link": "https://sweetcode.io/join-community/",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "",
+    "categories": ["Full-Stack Development", "DevOps"]
+  },
+  {
+    "name": "Syntropy",
+    "link": "https://www.syntropystack.com/writers",
+    "publication": "Publication",
+    "rate": "$250 - $650 for first-time authors",
+    "description": "",
+    "categories": ["Crypto", "DevOps"]
+  },
+  {
+    "name": "TakeShape",
+    "link": "https://www.takeshape.io/jobs/contributing-writer/",
+    "publication": "Publication",
+    "rate": "$300 for first-time authors",
+    "description": "",
+    "categories": ["Front-End Development", "Interviews"]
+  },
+  {
+    "name": "Tech Beacon",
+    "link": "https://techbeacon.com/aboutus",
+    "publication": "Publication",
+    "rate": "$400 for first-time authors",
+    "description": "The \"write for us\" page is currently behind an authentication barrier.",
+    "categories": ["DevOps", "Infrastructure"]
+  },
+  {
+    "name": "TechWell",
+    "link": "https://www.techwell.com/techwell-submission-guidelines",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "",
+    "categories": ["DevOps", "Soft Skills"]
+  },
+  {
+    "name": "TestDriven.io",
+    "link": "https://testdriven.io/join-testdriven/",
+    "publication": "Publication",
+    "rate": "$300 - $500 for first-time authors",
+    "description": "Pays $75 to $150 for updates and improvements to existing content.",
+    "categories": ["Full-Stack Development"]
+  },
+  {
+    "name": "The Bot Forge",
+    "link": "https://www.thebotforge.io/guest-authors/",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Focus on conversational AI",
+    "categories": ["Data Science", "Artificial Intelligence"]
+  },
+  {
+    "name": "The Pragmatic Bookshelf",
+    "link": "https://pragprog.com/become-an-author/",
+    "publication": "Publisher",
+    "rate": "$50% for first-time authors",
+    "description": "Named for their most iconic title, this independent publisher produces books on both technical and soft skills.",
+    "categories": []
+  },
+  {
+    "name": "Topcoder Thrive",
+    "link": "https://www.topcoder.com/thrive/articles/Submitting%20a%20Thrive%20Article",
+    "publication": "Publication",
+    "rate": "$75 for first-time authors",
+    "description": "",
+    "categories": [
+      "Front-End Development",
+      "Back-End Development",
+      "Data Science"
+    ]
+  },
+  {
+    "name": "Tutorialspoint",
+    "link": "https://www.tutorialspoint.com/about/tutorials_writing.htm",
+    "publication": "Publication",
+    "rate": "",
+    "description": "Payment is dependent on tutorial length, complexity, and subject.",
+    "categories": []
+  },
+  {
+    "name": "Twilio",
+    "link": "https://www.twilio.com/voices",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "Most tutorials involve one or more of Twilio's APIs.",
+    "categories": ["Full-Stack Development", "APIs", "Infrastructure"]
+  },
+  {
+    "name": "TypingDNA",
+    "link": "https://www.typingdna.com/guest-author-program#get-started",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "",
+    "categories": []
+  },
+  {
+    "name": "VisWiz.io",
+    "link": "https://blog.viswiz.io",
+    "publication": "Publication",
+    "rate": "$200 - $300 for first-time authors",
+    "description": "",
+    "categories": ["Front-End Development", "Back-End Development", "Testing"]
+  },
+  {
+    "name": "Vonage",
+    "link": "https://developer.nexmo.com/spotlight#submit-your-idea",
+    "publication": "Publication",
+    "rate": "$500 for first-time authors",
+    "description": "Posts should feature one or more Vonage products.",
+    "categories": ["Full-Stack Development"]
+  },
+  {
+    "name": "Vultr",
+    "link": "https://www.vultr.com/docs/vultr-docs-program-guidelines",
+    "publication": "Publication",
+    "rate": "$150 - $600 for first-time authors",
+    "description": "",
+    "categories": ["Infrastructure"]
+  },
+  {
+    "name": "Warrant",
+    "link": "https://blog.warrant.dev",
+    "publication": "Publication",
+    "rate": "$100 for first-time authors",
+    "description": "",
+    "categories": ["Back-End Development", "Authentication"]
+  },
+  {
+    "name": "webapp.io",
+    "link": "https://webapp.io/",
+    "publication": "Publication",
+    "rate": "$150 for first-time authors",
+    "description": "",
+    "categories": ["Infrastructure", "Full-Stack Development"]
+  },
+  {
+    "name": "Webiny",
+    "link": "https://www.webiny.com/docs/write-with-webiny/write-with-webiny",
+    "publication": "Publication",
+    "rate": "$200 for first-time authors",
+    "description": "Webiny is an open source serverless CMS.",
+    "categories": ["Front-End Development"]
+  },
+  {
+    "name": "Wizard on Demand",
+    "link": "https://wizardondemand.com",
+    "publication": "Agency",
+    "rate": "$15/hr for first-time authors",
+    "description": "Connect and collaborate with other writers, get detailed feedback from our editors, and learn from our subject matter experts.",
+    "categories": ["Infrastructure", "Full-Stack Development", "Data Science"]
+  },
+  {
+    "name": "WonderProxy",
+    "link": "https://wonderproxy.com/blog/looking-for-authors/",
+    "publication": "Publication",
+    "rate": "$350 - $500 for first-time authors",
+    "description": "",
+    "categories": ["Testing"]
+  },
+  {
+    "name": "WPHUB",
+    "link": "https://wphub.com/about-us/#Become_a_Guest_Author",
+    "publication": "Publication",
+    "rate": "$100 - $200 for first-time authors",
+    "description": "",
+    "categories": ["Wordpress"]
+  },
+  {
+    "name": "Zift",
+    "link": "https://wezift.com/write-for-zift/",
+    "publication": "Publication",
+    "rate": "$100 for first-time authors",
+    "description": "",
+    "categories": ["Parenting and Technology"]
+  },
+  {
+    "name": "\\newline",
+    "link": "https://www.newline.co/write-with-us",
+    "publication": "Publisher",
+    "rate": "$50% for first-time authors",
+    "description": "\\newline is a newer independent publisher focusing on full-stack tutorials and digital distribution.",
+    "categories": []
+  }
+]
