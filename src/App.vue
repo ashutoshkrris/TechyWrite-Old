@@ -4,6 +4,7 @@ import data from "./data.json";
 import Twitter from "./components/Twitter.vue";
 import GitHub from "./components/GitHub.vue";
 import GitHubSVG from "./components/GitHubSVG.vue";
+import NoResultsFound from "./components/404.vue";
 
 export default {
   setup() {
@@ -57,7 +58,7 @@ export default {
 
     return { opportunitiesData, checked, contributors, searchTerm };
   },
-  components: { Twitter, GitHub, GitHubSVG },
+  components: { Twitter, GitHub, GitHubSVG, NoResultsFound },
 };
 </script>
 
@@ -137,6 +138,23 @@ export default {
           </span>
         </div>
       </div>
+
+
+      <!-- No results found section -->
+      <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
+        <div class="w-64 md:w-[36rem] mx-auto">
+          <NoResultsFound />
+        </div>
+        <div class="text-center space-y-4">
+          <p class="text-white text-2xl md:text-4xl">
+            Uh Oh! We couldn't find what you are looking for
+          </p>
+          <p class="text-gray-300 md:text-xl">
+            No search results matched your query "{{searchTerm}}".
+          </p>
+        </div>
+      </div>
+
 
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
