@@ -151,16 +151,11 @@ export default {
                 class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
                 style="position: relative"
               >
-                <h2 class="flex rounded-2xl publication">
+                <h2 class="flex rounded-2xl opportunity-type">
                   {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <a
-                    class="opportunity-name font-semibold text-white"
-                    :href="opportunity.link"
-                    target="_blank"
-                    rel="noopener"
-                    >{{ opportunity.name }}</a
+                  <p class="opportunity-name font-semibold text-white">{{ opportunity.name }}</p
                   >
                 </div>
                 <div
