@@ -109,8 +109,8 @@ export default {
       </div>
 
       <!-- No results found section -->
-      <div v-if="opportunitiesData.length == 0" class="mb-20">
-        <div class="w-64 md:w-96 mx-auto">
+      <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
+        <div class="w-64 md:w-[36rem] mx-auto">
           <NoResultsFound />
         </div>
         <div class="text-center space-y-4">
