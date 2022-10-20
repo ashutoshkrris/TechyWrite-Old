@@ -4,6 +4,7 @@ import data from "./data.json";
 import Twitter from "./components/Twitter.vue";
 import GitHub from "./components/GitHub.vue";
 import GitHubSVG from "./components/GitHubSVG.vue";
+import NoResultsFound from "./components/404.vue";
 
 export default {
   setup() {
@@ -17,14 +18,14 @@ export default {
         return (
           data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
           data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-          data.rate.toLowerCase().includes(searchTerm.value.toLowerCase()) || 
+          data.rate.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
           data.categories.toString().toLowerCase().includes(searchTerm.value.toLowerCase())
         )
       })
 
       // sort filtered data
       const sortedFilteredData = filteredData.slice().sort((a, b) => a.name.localeCompare(b.name));
-      
+
       return checked.value ? sortedFilteredData : filteredData;
     });
     const contributors = ref([]);
@@ -51,7 +52,7 @@ export default {
 
     return { opportunitiesData, checked, contributors, searchTerm };
   },
-  components: { Twitter, GitHub, GitHubSVG },
+  components: { Twitter, GitHub, GitHubSVG, NoResultsFound },
 };
 </script>
 
@@ -60,22 +61,12 @@ export default {
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
-        <img
-          src="../public/image/Symbol.jpg"
-          class="object-cover w-16 h-16 rounded-full"
-        />
-        <h1
-          class="mt-2 text-4xl md:text-5xl font-semibold text-center text-white"
-        >
+        <img src="../public/image/Symbol.jpg" class="object-cover w-16 h-16 rounded-full" />
+        <h1 class="mt-2 text-4xl md:text-5xl font-semibold text-center text-white">
           TechyWrite
         </h1>
       </section>
-      <a
-        class="github-corner"
-        href="https://github.com/ashutoshkrris/TechyWrite"
-        target="_blank"
-        rel="noopener"
-      >
+      <a class="github-corner" href="https://github.com/ashutoshkrris/TechyWrite" target="_blank" rel="noopener">
         <GitHubSVG />
       </a>
 
@@ -84,25 +75,16 @@ export default {
         <!-- toggle -->
         <div class="flex items-center justify-center mb-6">
           <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
-          <button
-            type="button"
-            aria-pressed="false"
-            aria-labelledby="toggleLabel"
+          <button type="button" aria-pressed="false" aria-labelledby="toggleLabel"
             class="relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            :class="checked ? 'bg-psybeam' : 'bg-gray-300'"
-            @click="checked = !checked"
-          >
+            :class="checked ? 'bg-psybeam' : 'bg-gray-300'" @click="checked = !checked">
             <span class="sr-only">Use setting</span>
-            <span
-              aria-hidden="true"
+            <span aria-hidden="true"
               class="inline-block w-5 h-5 transition duration-200 ease-in-out transform bg-white rounded-full shadow ring-0"
-              :class="checked ? 'translate-x-5' : 'translate-x-0'"
-            ></span>
+              :class="checked ? 'translate-x-5' : 'translate-x-0'"></span>
           </button>
           <span class="ml-3" id="toggleLabel">
-            <span class="text-sm font-medium text-white"
-              >Sort alphabetically</span
-            >
+            <span class="text-sm font-medium text-white">Sort alphabetically</span>
           </span>
         </div>
 
@@ -115,139 +97,116 @@ export default {
                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
             </svg>
           </span>
-          <input type="text"
-            id="search-bar"
+          <input type="text" id="search-bar"
             class="px-4 py-2 bg-gray-800 text-gray-300 outline-none rounded-full w-[16rem] -ml-8 -mr-[4.5rem] pl-12 pr-20 focus:ring focus:ring-psybeam/80"
             @input="searchTerm = $event.target.value">
-          <span class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none">
+          <span
+            class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none">
             Ctrl + /
           </span>
         </div>
 
       </div>
 
+      <!-- No results found section -->
+      <div v-if="opportunitiesData.length == 0" class="mb-20">
+        <div class="w-64 md:w-96 mx-auto">
+          <NoResultsFound />
+        </div>
+        <div class="text-center space-y-4">
+          <p class="text-white text-2xl md:text-4xl">
+            Uh Oh! We couldn't find what you are looking for
+          </p>
+          <p class="text-gray-300 md:text-xl">
+            No search results matched your query "{{searchTerm}}".
+          </p>
+        </div>
+      </div>
+
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
-        <li
-          v-for="opportunity in opportunitiesData"
-          :key="opportunity.link"
-          class="p-3 w-full h-full"
-        >
+        <li v-for="opportunity in opportunitiesData" :key="opportunity.link" class="p-3 w-full h-full">
           <a :href="opportunity.link" target="_blank" rel="noopener">
             <div class="shadow-lg hover:shadow-xl">
-              <div
-                class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
-                style="position: relative"
-              >
+              <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
+                style="position: relative">
                 <h2 class="flex rounded-2xl publication">
                   {{ opportunity.publication }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <a
-                    class="text-3xl font-semibold text-white"
-                    :href="opportunity.link"
-                    target="_blank"
-                    rel="noopener"
-                    >{{ opportunity.name }}</a
-                  >
+                  <a class="text-3xl font-semibold text-white" :href="opportunity.link" target="_blank"
+                    rel="noopener">{{ opportunity.name }}</a>
                 </div>
                 <div class="flex flex-wrap justify-start mb-2">
                   <h2 class="pr-2 text-psybeam">Description:</h2>
                   <h3 class="text-white">{{ opportunity.description }}</h3>
                 </div>
 
-                <div
-                  v-if="opportunity.rate"
-                  class="flex flex-wrap justify-start mb-2"
-                >
+                <div v-if="opportunity.rate" class="flex flex-wrap justify-start mb-2">
                   <h2 class="pr-2 text-psybeam">Rate:</h2>
                   <h3 class="text-white">{{ opportunity.rate }}</h3>
-                  <div
-                    class="flex flex-row"
-                    style="position: absolute; right: 10px; bottom: 10px"
-                  >
-                    <li v-for="i in opportunity.categories" v-bind:key="i">
-                      <span
-                        class="bg-green-900 text-green-100 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 flex rounded-lg"
-                        >{{ i }}</span
-                      >
-                    </li>
-                  </div>
-                </div>
+                  <div class="flex flex-row" style="position: absolute; right: 10px; bottom: 10px">
+        <li v-for="i in opportunity.categories" v-bind:key="i">
+          <span
+            class="bg-green-900 text-green-100 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 flex rounded-lg">{{
+            i }}</span>
+        </li>
+  </div>
+  </div>
+  </div>
+  </div>
+  </a>
+  </li>
+  </ul>
+  <!-- footer -->
+  <footer>
+    <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8 space-y-8">
+      <!-- Mention contributors -->
+      <div class="text-center border-2 border-gray-500 rounded-xl px-2 md:px-6 py-4 space-y-6">
+        <p class="text-gray-200 text-lg font-medium">Our Contributors</p>
+        <ul class="flex flex-wrap items-center justify-center">
+          <li v-for="contributor in contributors" :key="contributor.id">
+            <div class="flex flex-col items-center px-2 md:px-6 py-4">
+              <img :src="contributor.avatar_url" :alt="contributor.login" class="rounded-full w-8 h-8" />
+
+              <div class="flex flex-col items-center space-y-1">
+                <a :href="contributor.html_url" target="_blank" rel="noopener"
+                  class="text-psybeam hover:text-psybeam/80">
+                  {{ contributor.login }}
+                </a>
+                <span class="text-gray-200 bg-gray-800 text-sm rounded-full px-2">
+                  {{ contributor.contributions }}
+                </span>
               </div>
             </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:flex md:items-center md:justify-between">
+        <div class="flex justify-center space-x-6 md:order-2">
+          <a href="https://twitter.com/ashutoshkrris" class="text-gray-400 hover:text-white" target="_blank"
+            rel="noopener">
+            <span class="sr-only">Twitter</span>
+            <Twitter />
           </a>
-        </li>
-      </ul>
-      <!-- footer -->
-      <footer>
-        <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8 space-y-8">
-          <!-- Mention contributors -->
-          <div
-            class="text-center border-2 border-gray-500 rounded-xl px-2 md:px-6 py-4 space-y-6"
-          >
-            <p class="text-gray-200 text-lg font-medium">Our Contributors</p>
-            <ul class="flex flex-wrap items-center justify-center">
-              <li v-for="contributor in contributors" :key="contributor.id">
-                <div class="flex flex-col items-center px-2 md:px-6 py-4">
-                  <img
-                    :src="contributor.avatar_url"
-                    :alt="contributor.login"
-                    class="rounded-full w-8 h-8"
-                  />
 
-                  <div class="flex flex-col items-center space-y-1">
-                    <a
-                      :href="contributor.html_url"
-                      target="_blank"
-                      rel="noopener"
-                      class="text-psybeam hover:text-psybeam/80"
-                    >
-                      {{ contributor.login }}
-                    </a>
-                    <span
-                      class="text-gray-200 bg-gray-800 text-sm rounded-full px-2"
-                    >
-                      {{ contributor.contributions }}
-                    </span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="md:flex md:items-center md:justify-between">
-            <div class="flex justify-center space-x-6 md:order-2">
-              <a
-                href="https://twitter.com/ashutoshkrris"
-                class="text-gray-400 hover:text-white"
-                target="_blank"
-                rel="noopener"
-              >
-                <span class="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-
-              <a
-                href="https://github.com/ashutoshkrris"
-                class="text-gray-400 hover:text-white"
-                target="_blank"
-                rel="noopener"
-              >
-                <span class="sr-only">GitHub</span>
-                <GitHub />
-              </a>
-            </div>
-            <div class="mt-8 md:mt-0 md:order-1">
-              <p class="text-sm text-center text-gray-400">
-                &copy; {{ new Date().getFullYear() }} Made with ❤️ by Ashutosh
-                Krishna
-              </p>
-            </div>
-          </div>
+          <a href="https://github.com/ashutoshkrris" class="text-gray-400 hover:text-white" target="_blank"
+            rel="noopener">
+            <span class="sr-only">GitHub</span>
+            <GitHub />
+          </a>
         </div>
-      </footer>
-    </section>
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-sm text-center text-gray-400">
+            &copy; {{ new Date().getFullYear() }} Made with ❤️ by Ashutosh
+            Krishna
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
   </div>
 </template>
 
@@ -266,6 +225,7 @@ export default {
 }
 
 @keyframes octocat-wave {
+
   0%,
   100% {
     transform: rotate(0);
