@@ -9,21 +9,28 @@ export default {
   setup() {
     const checked = ref(false);
     const originalData = [...data];
-    const searchTerm = ref('');
+    const searchTerm = ref("");
 
     const opportunitiesData = computed(() => {
       // filter original data
-      const filteredData = originalData.filter(data => {
+      const filteredData = originalData.filter((data) => {
         return (
           data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-          data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-          data.categories.toString().toLowerCase().includes(searchTerm.value.toLowerCase())
-        )
-      })
+          data.description
+            .toLowerCase()
+            .includes(searchTerm.value.toLowerCase()) ||
+          data.categories
+            .toString()
+            .toLowerCase()
+            .includes(searchTerm.value.toLowerCase())
+        );
+      });
 
       // sort filtered data
-      const sortedFilteredData = filteredData.slice().sort((a, b) => a.name.localeCompare(b.name));
-      
+      const sortedFilteredData = filteredData
+        .slice()
+        .sort((a, b) => a.name.localeCompare(b.name));
+
       return checked.value ? sortedFilteredData : filteredData;
     });
     const contributors = ref([]);
@@ -42,11 +49,11 @@ export default {
     };
     fetchContributors();
 
-    window.addEventListener('keydown', (event) => {
-      if (event.ctrlKey && event.key === '/') {
-        document.querySelector('#search-bar').focus();
+    window.addEventListener("keydown", (event) => {
+      if (event.ctrlKey && event.key === "/") {
+        document.querySelector("#search-bar").focus();
       }
-    })
+    });
 
     return { opportunitiesData, checked, contributors, searchTerm };
   },
@@ -59,7 +66,12 @@ export default {
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
-        <img src="\images\logo.png" class="object-cover rounded-full p-4" style="width:60%" alt="logo" />
+        <img
+          src="\images\logo.png"
+          class="object-cover rounded-full p-4"
+          style="width: 60%"
+          alt="logo"
+        />
       </section>
       <a
         class="github-corner"
@@ -70,8 +82,9 @@ export default {
         <GitHubSVG />
       </a>
 
-
-      <div class="flex flex-col md:flex-row items-center justify-between mb-6 px-3">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between mb-6 px-3"
+      >
         <!-- toggle -->
         <div class="flex items-center justify-center mb-6">
           <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
@@ -101,20 +114,28 @@ export default {
         <div class="flex items-center">
           <!-- Search icon -->
           <span class="z-10 text-gray-300 w-4 h-4 shrink-0">
-            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <svg
+              class="fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
               <path
-                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+              />
             </svg>
           </span>
-          <input type="text"
+          <input
+            type="text"
             id="search-bar"
             class="px-4 py-2 bg-gray-800 text-gray-300 outline-none rounded-full w-[16rem] -ml-8 -mr-[4.5rem] pl-12 pr-20 focus:ring focus:ring-psybeam/80"
-            @input="searchTerm = $event.target.value">
-          <span class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none">
+            @input="searchTerm = $event.target.value"
+          />
+          <span
+            class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none"
+          >
             Ctrl + /
           </span>
         </div>
-
       </div>
 
       <!-- list -->
@@ -142,27 +163,72 @@ export default {
                     >{{ opportunity.name }}</a
                   >
                 </div>
-                <div class="flex justify-start mb-2" v-if="opportunity.description">
+                <div
+                  class="flex justify-start mb-2"
+                  v-if="opportunity.description"
+                >
                   <em class="bi bi-info-circle me-3 icon"></em>
-                  <h3 class="text-white" style="margin-top:3px;">{{ opportunity.description }}</h3>
+                  <h3 class="text-white" style="margin-top: 3px">
+                    {{ opportunity.description }}
+                  </h3>
                 </div>
 
                 <div class="flex justify-start mb-2" v-if="opportunity.contact">
                   <em class="bi bi-envelope me-3 icon"></em>
-                  <a :href="'mailto:' + opportunity.contact"><h3 class="text-white" style="margin-top:3px;">{{ opportunity.contact }}</h3></a>
+                  <a :href="'mailto:' + opportunity.contact"
+                    ><h3 class="text-white" style="margin-top: 3px">
+                      {{ opportunity.contact }}
+                    </h3></a
+                  >
                 </div>
 
-                <hr v-if="opportunity.description && (opportunity.maxRate || opportunity.hourlyMaxRate || opportunity.royaltyRate)" style="margin-bottom: 5px;">
+                <hr
+                  v-if="
+                    opportunity.description &&
+                    (opportunity.maxRate ||
+                      opportunity.hourlyMaxRate ||
+                      opportunity.royaltyRate)
+                  "
+                  style="margin-bottom: 5px"
+                />
 
                 <div
-                  v-if="opportunity.maxRate || opportunity.hourlyMaxRate || opportunity.royaltyRate"
+                  v-if="
+                    opportunity.maxRate ||
+                    opportunity.hourlyMaxRate ||
+                    opportunity.royaltyRate
+                  "
                   class="flex justify-start mb-2"
                 >
                   <em class="bi bi-credit-card icon"></em>
-                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.minRate && opportunity.maxRate">${{ opportunity.minRate }} - ${{ opportunity.maxRate}}</h3>
-                  <h3 class="text-white" style="margin-top:3px;" v-if="!opportunity.minRate && opportunity.maxRate">${{ opportunity.maxRate}}</h3>
-                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.hourlyMaxRate">${{ opportunity.hourlyMaxRate }} per hour</h3>
-                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.royaltyRate">{{ opportunity.royaltyRate }}</h3>
+                  <h3
+                    class="text-white"
+                    style="margin-top: 3px"
+                    v-if="opportunity.minRate && opportunity.maxRate"
+                  >
+                    ${{ opportunity.minRate }} - ${{ opportunity.maxRate }}
+                  </h3>
+                  <h3
+                    class="text-white"
+                    style="margin-top: 3px"
+                    v-if="!opportunity.minRate && opportunity.maxRate"
+                  >
+                    ${{ opportunity.maxRate }}
+                  </h3>
+                  <h3
+                    class="text-white"
+                    style="margin-top: 3px"
+                    v-if="opportunity.hourlyMaxRate"
+                  >
+                    ${{ opportunity.hourlyMaxRate }} per hour
+                  </h3>
+                  <h3
+                    class="text-white"
+                    style="margin-top: 3px"
+                    v-if="opportunity.royaltyRate"
+                  >
+                    {{ opportunity.royaltyRate }}
+                  </h3>
                   <div
                     class="flex flex-row"
                     style="position: absolute; right: 10px; bottom: 10px"
@@ -251,54 +317,3 @@ export default {
     </section>
   </div>
 </template>
-
-<style>
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-.opportunity-name {
-  font-size: 1.2rem;
-}
-
-.publication {
-  padding: 0.5em;
-  position: absolute;
-  color: black;
-  background-color: white;
-  top: 15px;
-  right: 18px;
-}
-
-.icon{
-  color: #8589f4;
-  margin-right: 10px;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-</style>
