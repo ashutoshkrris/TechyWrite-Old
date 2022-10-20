@@ -88,7 +88,7 @@ window.addEventListener("keydown", (event) => {
             type="button"
             aria-pressed="false"
             aria-labelledby="toggleLabel"
-            class="relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="toggle relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             :class="checked ? 'bg-psybeam' : 'bg-gray-300'"
             @click="checked = !checked"
           >
@@ -161,7 +161,7 @@ window.addEventListener("keydown", (event) => {
         >
             <div class="shadow-lg hover:shadow-xl">
               <div
-                class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
+                class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50 opportunity"
                 style="position: relative"
               >
                 <h2 class="flex rounded-2xl opportunity-type">
