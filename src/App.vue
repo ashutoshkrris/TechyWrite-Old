@@ -56,6 +56,9 @@ window.addEventListener("keydown", (event) => {
 
 <template>
   <div class="bg-void min-h-screen">
+    <!-- Back to top button -->
+    <ScrollToTop />
+
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
@@ -253,9 +256,6 @@ window.addEventListener("keydown", (event) => {
           </a>
         </li>
       </ul>
-
-      <!-- Back to top button -->
-      <ScrollToTop />
 
       <!-- footer -->
       <footer>

@@ -30,10 +30,10 @@ export default defineComponent({
 <template>
   <div
     ref="scrollTopButton"
-    class="invisible sticky w-full flex justify-end bottom-0 pb-3 pr-5 transition"
+    class="invisible fixed w-full flex justify-end bottom-7 right-7 transition"
   >
     <button
-      class="bg-gray-800 text-gray-300 rounded-full p-3 focus:outline-none focus:ring focus:ring-psybeam/80"
+      class="bg-gray-800 text-white rounded-full p-3 focus:outline-none focus:ring focus:ring-psybeam/80"
       @click="scrollToTop"
       role="button"
       aria-label="scroll to top of the page"
