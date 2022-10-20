@@ -17,7 +17,6 @@ export default {
         return (
           data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
           data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-          data.rate.toLowerCase().includes(searchTerm.value.toLowerCase()) || 
           data.categories.toString().toLowerCase().includes(searchTerm.value.toLowerCase())
         )
       })
@@ -132,7 +131,7 @@ export default {
                 style="position: relative"
               >
                 <h2 class="flex rounded-2xl publication">
-                  {{ opportunity.publication }}
+                  {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
                   <a
@@ -148,14 +147,22 @@ export default {
                   <h3 class="text-white" style="margin-top:3px;">{{ opportunity.description }}</h3>
                 </div>
 
-                <hr v-if="opportunity.description && opportunity.rate" style="margin-bottom: 5px;">
+                <div class="flex justify-start mb-2" v-if="opportunity.contact">
+                  <em class="bi bi-envelope me-3 icon"></em>
+                  <a :href="'mailto:' + opportunity.contact"><h3 class="text-white" style="margin-top:3px;">{{ opportunity.contact }}</h3></a>
+                </div>
+
+                <hr v-if="opportunity.description && (opportunity.maxRate || opportunity.hourlyMaxRate || opportunity.royaltyRate)" style="margin-bottom: 5px;">
 
                 <div
-                  v-if="opportunity.rate"
+                  v-if="opportunity.maxRate || opportunity.hourlyMaxRate || opportunity.royaltyRate"
                   class="flex justify-start mb-2"
                 >
                   <em class="bi bi-credit-card icon"></em>
-                  <h3 class="text-white" style="margin-top:3px;">{{ opportunity.rate }}</h3>
+                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.minRate && opportunity.maxRate">${{ opportunity.minRate }} - ${{ opportunity.maxRate}}</h3>
+                  <h3 class="text-white" style="margin-top:3px;" v-if="!opportunity.minRate && opportunity.maxRate">${{ opportunity.maxRate}}</h3>
+                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.hourlyMaxRate">${{ opportunity.hourlyMaxRate }} per hour</h3>
+                  <h3 class="text-white" style="margin-top:3px;" v-if="opportunity.royaltyRate">{{ opportunity.royaltyRate }}</h3>
                   <div
                     class="flex flex-row"
                     style="position: absolute; right: 10px; bottom: 10px"

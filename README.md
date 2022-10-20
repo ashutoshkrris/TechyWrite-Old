@@ -55,14 +55,18 @@ Found a paid technical writing opportunity we don't have yet? You can easily add
 
 ```json
   {
-    "name": "Appsmith",
-    "link": "https://blog.appsmith.com/launching-the-appsmith-writers-program",
-    "publication": "Publication",
-    "rate": "$200 - $400 for first-time authors",
-    "description": "Must include Appsmith technologies in the tutorial.",
-    "categories": ["Back-End Development"]
+    "name": "Digital Ocean",
+    "type": "Publication",
+    "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
+    "categories": ["Infrastructure", "Open Source"],
+    "minRate": 300,
+    "maxRate": 400,
+    "description": "Matches payments with donations to tech-focused charities. Further opportunities for paid updates to existing tutorials."
   }
 ```
+* If there is fixed rate, then don't include `minRate`. Just include `maxRate`.
+* If there is hourly rate, then use `hourlyMaxRate` instead of `minRate` and `maxRate`.
+* If there is royalty, then use `royaltyRate` instead of `minRate` and `maxRate`.
 
 3. Once done you can now raise a Pull Request to the main branch<br>
 
