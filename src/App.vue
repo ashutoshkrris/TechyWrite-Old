@@ -5,6 +5,7 @@ import Twitter from "./assets/twitter.svg";
 import GitHub from "./assets/github.svg";
 import GitHubSVG from "./assets/githubsvg.svg";
 import NoResultsFound from "./components/404.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
 
 const checked = ref(false);
 const originalData = [...data];
@@ -15,9 +16,7 @@ const opportunitiesData = computed(() => {
   const filteredData = originalData.filter((data) => {
     return (
       data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.description
-        .toLowerCase()
-        .includes(searchTerm.value.toLowerCase()) ||
+      data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
       data.categories
         .toString()
         .toLowerCase()
@@ -73,7 +72,7 @@ window.addEventListener("keydown", (event) => {
         target="_blank"
         rel="noopener"
       >
-        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG"/>
+        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG" />
       </a>
 
       <div
@@ -132,22 +131,23 @@ window.addEventListener("keydown", (event) => {
         </div>
       </div>
 
-
       <!-- No results found section -->
       <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
         <div class="w-64 md:w-[20rem] mx-auto">
           <NoResultsFound />
         </div>
-        <div class="text-center space-y-4" style="margin-top:0px;">
+        <div class="text-center space-y-4" style="margin-top: 0px">
           <p class="text-white text-2xl md:text-2xl">
             Uh Oh! We couldn't find what you are looking for
           </p>
           <p class="text-gray-300 md:text-xl">
-            No search results matched your query "<strong>{{searchTerm}}</strong>".
+            No search results matched your query "<strong>{{
+              searchTerm
+            }}</strong
+            >".
           </p>
         </div>
       </div>
-
 
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
@@ -166,8 +166,9 @@ window.addEventListener("keydown", (event) => {
                   {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <p class="opportunity-name font-semibold text-white">{{ opportunity.name }}</p
-                  >
+                  <p class="opportunity-name font-semibold text-white">
+                    {{ opportunity.name }}
+                  </p>
                 </div>
                 <div
                   class="flex justify-start mb-2"
@@ -252,6 +253,10 @@ window.addEventListener("keydown", (event) => {
           </a>
         </li>
       </ul>
+
+      <!-- Back to top button -->
+      <ScrollToTop />
+
       <!-- footer -->
       <footer>
         <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8 space-y-8">
@@ -298,7 +303,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">Twitter</span>
-                <img class="w-[30px]" :src="Twitter" alt="Twitter logo">
+                <img class="w-[30px]" :src="Twitter" alt="Twitter logo" />
               </a>
 
               <a
@@ -308,7 +313,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">GitHub</span>
-                <img :src="GitHub" alt="github"/>
+                <img :src="GitHub" alt="github" />
               </a>
             </div>
             <div class="mt-8 md:mt-0 md:order-1">
