@@ -159,7 +159,6 @@ window.addEventListener("keydown", (event) => {
           :key="opportunity.link"
           class="p-3 w-full h-full"
         >
-          <a :href="opportunity.link" target="_blank" rel="noopener">
             <div class="shadow-lg hover:shadow-xl">
               <div
                 class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
@@ -169,9 +168,8 @@ window.addEventListener("keydown", (event) => {
                   {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <p class="opportunity-name font-semibold text-white">
-                    {{ opportunity.name }}
-                  </p>
+                  <a class="text-3xl font-semibold text-white" :href="opportunity.link" target="_blank"
+                    rel="noopener">{{ opportunity.name }}</a>
                 </div>
                 <div
                   class="flex justify-start mb-2"
@@ -253,7 +251,6 @@ window.addEventListener("keydown", (event) => {
                 </div>
               </div>
             </div>
-          </a>
         </li>
       </ul>
 
