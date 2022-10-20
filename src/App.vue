@@ -9,29 +9,60 @@ import NoResultsFound from "./components/404.vue";
 const checked = ref(false);
 const originalData = [...data];
 const searchTerm = ref("");
+const currentPage = ref(0);
+const onePageSize = 10;
+const maxPage = ref(originalData.length / onePageSize + 1);
+const totalLength = ref(0);
 
 const opportunitiesData = computed(() => {
   // filter original data
   const filteredData = originalData.filter((data) => {
     return (
       data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.description
-        .toLowerCase()
-        .includes(searchTerm.value.toLowerCase()) ||
+      data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
       data.categories
         .toString()
         .toLowerCase()
         .includes(searchTerm.value.toLowerCase())
     );
   });
-
   // sort filtered data
   const sortedFilteredData = filteredData
     .slice()
     .sort((a, b) => a.name.localeCompare(b.name));
+  const operationArray =
+    searchTerm.value !== "" ? sortedFilteredData : filteredData;
+  totalLength.value = operationArray.length;
 
-  return checked.value ? sortedFilteredData : filteredData;
+  const pageData = [];
+  maxPage.value = Math.floor(operationArray.length / onePageSize);
+  for (let i = 1; i <= maxPage.value; i++) {
+    pageData.push(operationArray.slice((i - 1) * onePageSize, i * onePageSize));
+  }
+  pageData.push(operationArray.slice(-(operationArray.length % onePageSize)));
+  maxPage.value += 1;
+  if (currentPage.value >= maxPage) {
+    currentPage.value = maxPage - 1;
+  }
+  return pageData[currentPage.value];
 });
+
+function nextPage() {
+  if (currentPage.value === maxPage.value - 1) {
+    currentPage.value = 0;
+  } else {
+    currentPage.value += 1;
+  }
+}
+
+function previousPage() {
+  if (currentPage.value === 0) {
+    currentPage.value = maxPage.value - 1;
+  } else {
+    currentPage.value -= 1;
+  }
+}
+
 const contributors = ref([]);
 
 // this function calls github api for fetching repo contributors
@@ -73,7 +104,7 @@ window.addEventListener("keydown", (event) => {
         target="_blank"
         rel="noopener"
       >
-        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG"/>
+        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG" />
       </a>
 
       <div
@@ -81,7 +112,7 @@ window.addEventListener("keydown", (event) => {
       >
         <!-- toggle -->
         <div class="flex items-center justify-center mb-6">
-          <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
+          <h2 class="text-white mr-5">Total: {{ totalLength }}</h2>
           <button
             type="button"
             aria-pressed="false"
@@ -132,7 +163,6 @@ window.addEventListener("keydown", (event) => {
         </div>
       </div>
 
-
       <!-- No results found section -->
       <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
         <div class="w-64 md:w-[20rem] mx-auto">
@@ -143,12 +173,59 @@ window.addEventListener("keydown", (event) => {
             Uh Oh! We couldn't find what you are looking for
           </p>
           <p class="text-gray-300 md:text-xl">
-            No search results matched your query "<strong>{{searchTerm}}</strong>".
+            No search results matched your query "<strong>{{
+              searchTerm
+            }}</strong
+            >".
           </p>
         </div>
       </div>
-
-
+      <!--page tab-->
+      <div
+        class="text-white flex justify-center child:border-1 child:border-white"
+      >
+        <ul class="inline-flex -space-x-px">
+          <li
+            class="py-2 px-3 ml-0 leading-tight rounded-l-lg border bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white"
+            @click="previousPage"
+          >
+            Previous
+          </li>
+          <li
+            :class="
+              (currentPage === 0 ? 'bg-gray-700 text-white ' : '') +
+              'py-2 px-3 ml-0 leading-tight border bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white'
+            "
+            @click="currentPage = 0"
+          >
+            {{1}}
+          </li>
+          <li
+            v-if="(currentPage !== 0 && currentPage !== maxPage - 1)"
+            :class="
+              (currentPage !== 0 && currentPage !== maxPage - 1 ? 'bg-gray-700 text-white ' : '') +
+              'py-2 px-3 ml-0 leading-tight border bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white'
+            "
+          >
+            {{ currentPage + 1}}
+          </li>
+          <li
+            :class="
+              (currentPage === maxPage - 1 ? 'bg-gray-700 text-white ' : '') +
+              'py-2 px-3 ml-0 leading-tight border bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white'
+            "
+            @click="currentPage = maxPage - 1"
+          >
+            {{ maxPage}}
+          </li>
+          <li
+            class="py-2 px-3 ml-0 leading-tight rounded-r-lg border bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white"
+            @click="nextPage"
+          >
+            Next
+          </li>
+        </ul>
+      </div>
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
         <li
@@ -166,8 +243,9 @@ window.addEventListener("keydown", (event) => {
                   {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <p class="opportunity-name font-semibold text-white">{{ opportunity.name }}</p
-                  >
+                  <p class="opportunity-name font-semibold text-white">
+                    {{ opportunity.name }}
+                  </p>
                 </div>
                 <div
                   class="flex justify-start mb-2"
@@ -298,7 +376,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">Twitter</span>
-                <img class="w-[30px]" :src="Twitter" alt="Twitter logo">
+                <img class="w-[30px]" :src="Twitter" alt="Twitter logo" />
               </a>
 
               <a
@@ -308,7 +386,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">GitHub</span>
-                <img :src="GitHub" alt="github"/>
+                <img :src="GitHub" alt="github" />
               </a>
             </div>
             <div class="mt-8 md:mt-0 md:order-1">
