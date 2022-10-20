@@ -142,15 +142,15 @@ export default {
 
       <!-- No results found section -->
       <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
-        <div class="w-64 md:w-[36rem] mx-auto">
+        <div class="w-64 md:w-[20rem] mx-auto">
           <NoResultsFound />
         </div>
         <div class="text-center space-y-4">
-          <p class="text-white text-2xl md:text-4xl">
+          <p class="text-white text-2xl md:text-2xl">
             Uh Oh! We couldn't find what you are looking for
           </p>
           <p class="text-gray-300 md:text-xl">
-            No search results matched your query "{{searchTerm}}".
+            No search results matched your query "<strong>{{searchTerm}}</strong>".
           </p>
         </div>
       </div>
