@@ -135,7 +135,7 @@ export default {
                 </h2>
                 <div class="flex items-center mb-3">
                   <a
-                    class="text-3xl font-semibold text-white"
+                    class="opportunity-name font-semibold text-white"
                     :href="opportunity.link"
                     target="_blank"
                     rel="noopener"
@@ -257,13 +257,17 @@ export default {
   animation: octocat-wave 560ms ease-in-out;
 }
 
+.opportunity-name {
+  font-size: 1.2rem;
+}
+
 .publication {
   padding: 0.5em;
   position: absolute;
   color: black;
   background-color: white;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 18px;
 }
 
 .icon{

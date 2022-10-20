@@ -931,5 +931,13 @@
     "minRate": 100,
     "maxRate": 250,
     "description": "neverinstall offers a way to stream apps to browser and seeks relevant technical content"
+  },
+  {
+    "name": "Astrix Technology LLC",
+    "link": "https://www.ziprecruiter.com/c/AstrixTechnology-LLC/Job/Technical-Writer/-in-Redmond,WA?jid=2a49dbf6c3a44a95&lvk=07OWIPZhK5EtxcLgosArSA.--MfK71sSPN",
+    "type": "Agency",
+    "hourlyMaxRate": "30 - 40",
+    "description": "Requires prior experience and will provide training prior to joining",
+    "categories": ["Science", "Biotech", "Pharmaceutical"]
   }
 ]
