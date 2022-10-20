@@ -30,7 +30,7 @@ export default defineComponent({
 <template>
   <div
     ref="scrollTopButton"
-    class="invisible fixed w-full flex justify-end bottom-7 right-7 transition"
+    class="invisible fixed flex justify-end bottom-7 right-7 transition"
   >
     <button
       class="bg-gray-800 text-white rounded-full p-3 focus:outline-none focus:ring focus:ring-psybeam/80"
