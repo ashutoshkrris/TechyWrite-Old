@@ -138,7 +138,7 @@ window.addEventListener("keydown", (event) => {
         <div class="w-64 md:w-[20rem] mx-auto">
           <NoResultsFound />
         </div>
-        <div class="text-center space-y-4">
+        <div class="text-center space-y-4" style="margin-top:0px;">
           <p class="text-white text-2xl md:text-2xl">
             Uh Oh! We couldn't find what you are looking for
           </p>
