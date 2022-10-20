@@ -47,7 +47,7 @@
   background-color: red; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
+  padding: 11px; /* Some padding */
   border-radius: 5px; /* Rounded corners */
   font-size: 15px; /* Increase font size */
 }
