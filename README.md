@@ -1,8 +1,14 @@
-# TechyWrite
+<p align="center" style="width:60%">
+
+![Logo](https://user-images.githubusercontent.com/101503258/196723802-179cfe0a-36e8-4c16-aa91-877f413e5c02.png)
+
+</p>
+ 
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A website to list down available paid writing opportunities for technical writers.
+
 
 
 ## 👨‍💻 Tech Stack
