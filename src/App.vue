@@ -143,17 +143,19 @@ export default {
                     >{{ opportunity.name }}</a
                   >
                 </div>
-                <div class="flex flex-wrap justify-start mb-2">
-                  <h2 class="pr-2 text-psybeam">Description:</h2>
-                  <h3 class="text-white">{{ opportunity.description }}</h3>
+                <div class="flex justify-start mb-2" v-if="opportunity.description">
+                  <em class="bi bi-info-circle me-3 icon"></em>
+                  <h3 class="text-white" style="margin-top:3px;">{{ opportunity.description }}</h3>
                 </div>
+
+                <hr v-if="opportunity.description && opportunity.rate" style="margin-bottom: 5px;">
 
                 <div
                   v-if="opportunity.rate"
-                  class="flex flex-wrap justify-start mb-2"
+                  class="flex justify-start mb-2"
                 >
-                  <h2 class="pr-2 text-psybeam">Rate:</h2>
-                  <h3 class="text-white">{{ opportunity.rate }}</h3>
+                  <em class="bi bi-credit-card icon"></em>
+                  <h3 class="text-white" style="margin-top:3px;">{{ opportunity.rate }}</h3>
                   <div
                     class="flex flex-row"
                     style="position: absolute; right: 10px; bottom: 10px"
@@ -255,6 +257,11 @@ export default {
   background-color: white;
   top: 10px;
   right: 10px;
+}
+
+.icon{
+  color: #8589f4;
+  margin-right: 10px;
 }
 
 @keyframes octocat-wave {
