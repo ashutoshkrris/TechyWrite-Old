@@ -1,65 +1,58 @@
-<script>
+<script setup>
 import { computed, ref } from "vue";
 import data from "./data.json";
-import Twitter from "./components/Twitter.vue";
-import GitHub from "./components/GitHub.vue";
-import GitHubSVG from "./components/GitHubSVG.vue";
+import Twitter from "./assets/twitter.svg";
+import GitHub from "./assets/github.svg";
+import GitHubSVG from "./assets/githubsvg.svg";
 import NoResultsFound from "./components/404.vue";
 
-export default {
-  setup() {
-    const checked = ref(false);
-    const originalData = [...data];
-    const searchTerm = ref("");
+const checked = ref(false);
+const originalData = [...data];
+const searchTerm = ref("");
 
-    const opportunitiesData = computed(() => {
-      // filter original data
-      const filteredData = originalData.filter((data) => {
-        return (
-          data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-          data.description
-            .toLowerCase()
-            .includes(searchTerm.value.toLowerCase()) ||
-          data.categories
-            .toString()
-            .toLowerCase()
-            .includes(searchTerm.value.toLowerCase())
-        );
-      });
+const opportunitiesData = computed(() => {
+  // filter original data
+  const filteredData = originalData.filter((data) => {
+    return (
+      data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+      data.description
+        .toLowerCase()
+        .includes(searchTerm.value.toLowerCase()) ||
+      data.categories
+        .toString()
+        .toLowerCase()
+        .includes(searchTerm.value.toLowerCase())
+    );
+  });
 
-      // sort filtered data
-      const sortedFilteredData = filteredData
-        .slice()
-        .sort((a, b) => a.name.localeCompare(b.name));
+  // sort filtered data
+  const sortedFilteredData = filteredData
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-      return checked.value ? sortedFilteredData : filteredData;
-    });
-    const contributors = ref([]);
+  return checked.value ? sortedFilteredData : filteredData;
+});
+const contributors = ref([]);
 
-    // this function calls github api for fetching repo contributors
-    const fetchContributors = async () => {
-      try {
-        const response = await fetch(
-          "https://api.github.com/repos/ashutoshkrris/TechyWrite/contributors"
-        );
-        const data = await response.json();
-        contributors.value = data;
-      } catch (err) {
-        console.log(err.message);
-      }
-    };
-    fetchContributors();
-
-    window.addEventListener("keydown", (event) => {
-      if (event.ctrlKey && event.key === "/") {
-        document.querySelector("#search-bar").focus();
-      }
-    });
-
-    return { opportunitiesData, checked, contributors, searchTerm };
-  },
-  components: { Twitter, GitHub, GitHubSVG, NoResultsFound },
+// this function calls github api for fetching repo contributors
+const fetchContributors = async () => {
+  try {
+    const response = await fetch(
+      "https://api.github.com/repos/ashutoshkrris/TechyWrite/contributors"
+    );
+    const data = await response.json();
+    contributors.value = data;
+  } catch (err) {
+    console.log(err.message);
+  }
 };
+fetchContributors();
+
+window.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.key === "/") {
+    document.querySelector("#search-bar").focus();
+  }
+});
 </script>
 
 <template>
@@ -80,7 +73,7 @@ export default {
         target="_blank"
         rel="noopener"
       >
-        <GitHubSVG />
+        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG"/>
       </a>
 
       <div
@@ -305,7 +298,7 @@ export default {
                 rel="noopener"
               >
                 <span class="sr-only">Twitter</span>
-                <Twitter />
+                <img class="w-[30px]" :src="Twitter" alt="Twitter logo">
               </a>
 
               <a
@@ -315,7 +308,7 @@ export default {
                 rel="noopener"
               >
                 <span class="sr-only">GitHub</span>
-                <GitHub />
+                <img :src="GitHub" alt="github"/>
               </a>
             </div>
             <div class="mt-8 md:mt-0 md:order-1">
