@@ -9,9 +9,23 @@ export default {
   setup() {
     const checked = ref(false);
     const originalData = [...data];
-    const sortedData = data.sort((a, b) => a.name.localeCompare(b.name));
+    const searchTerm = ref('');
+
     const opportunitiesData = computed(() => {
-      return checked.value ? sortedData : originalData;
+      // filter original data
+      const filteredData = originalData.filter(data => {
+        return (
+          data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+          data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+          data.rate.toLowerCase().includes(searchTerm.value.toLowerCase()) || 
+          data.categories.toString().toLowerCase().includes(searchTerm.value.toLowerCase())
+        )
+      })
+
+      // sort filtered data
+      const sortedFilteredData = filteredData.slice().sort((a, b) => a.name.localeCompare(b.name));
+      
+      return checked.value ? sortedFilteredData : filteredData;
     });
     const contributors = ref([]);
 
@@ -29,14 +43,14 @@ export default {
     };
     fetchContributors();
 
-    return { opportunitiesData, checked, contributors };
+    return { opportunitiesData, checked, contributors, searchTerm };
   },
   components: { Twitter, GitHub, GitHubSVG },
 };
 </script>
 
 <template>
-  <div class="bg-void">
+  <div class="bg-void min-h-screen">
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
@@ -58,9 +72,11 @@ export default {
       >
         <GitHubSVG />
       </a>
-      <!-- toggle -->
-      <div class="flex flex-col items-center justify-center mx-auto mb-6">
-        <div class="flex items-center justify-center mx-auto mb-6">
+
+
+      <div class="flex flex-col md:flex-row items-center justify-between mb-6 px-3">
+        <!-- toggle -->
+        <div class="flex items-center justify-center mb-6">
           <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
           <button
             type="button"
@@ -83,7 +99,26 @@ export default {
             >
           </span>
         </div>
+
+        <!-- Search bar -->
+        <div class="flex items-center">
+          <!-- Search icon -->
+          <span class="z-10 text-gray-300 w-4 h-4 shrink-0">
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+            </svg>
+          </span>
+          <input type="text"
+            class="px-4 py-2 bg-gray-800 text-gray-300 outline-none rounded-full w-[16rem] -ml-8 -mr-[4.5rem] pl-12 pr-20 focus:ring focus:ring-psybeam/80"
+            @input="searchTerm = $event.target.value">
+          <span class="z-10 text-gray-500 border border-gray-500 shrink-0 text-xs px-2 mr-4 py-1 rounded-lg select-none">
+            Ctrl + /
+          </span>
+        </div>
+
       </div>
+
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
         <li
