@@ -1,5 +1,21 @@
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+  animation: octocat-wave 560ms linear;
+}
+
+#search-bar {
+  transition: box-shadow .2s ease-in-out;
+}
+
+.scroll-top {
+  transition: box-shadow .2s ease-in-out;
+}
+
+.toggle {
+  transition: box-shadow .2s ease-in-out;
+}
+
+.opportunity {
+  transition: background-color .2s ease-in-out;
 }
 
 .opportunity-name {
