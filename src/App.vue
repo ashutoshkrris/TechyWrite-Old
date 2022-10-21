@@ -1,11 +1,11 @@
 <script setup>
 import { computed, ref } from "vue";
 import data from "./data.json";
-import Header from "./components/Header.vue";
+import Header from "./components/Header/Header.vue";
 import NoResultsFound from "./components/NoResultsFound.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 import OpportunityList from "./components/OpportunityList.vue";
-import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer/Footer.vue";
 
 const checked = ref(false);
 const originalData = [...data];
