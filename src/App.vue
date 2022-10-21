@@ -1,6 +1,5 @@
 <script setup>
-import { computed, ref } from "vue";
-import data from "./data.json";
+import { ref } from "vue";
 import Header from "./components/Header/Header.vue";
 import NoResultsFound from "./components/NoResultsFound.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
@@ -8,35 +7,24 @@ import OpportunityList from "./components/OpportunityList.vue";
 import Footer from "./components/Footer/Footer.vue";
 
 const checked = ref(false);
-const originalData = [...data];
 const searchTerm = ref("");
-
-const opportunitiesData = computed(() => {
-  // filter original data
-  const filteredData = originalData.filter((data) => {
-    return (
-      data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.categories
-        .toString()
-        .toLowerCase()
-        .includes(searchTerm.value.toLowerCase())
-    );
-  });
-
-  // sort filtered data
-  const sortedFilteredData = filteredData
-    .slice()
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  return checked.value ? sortedFilteredData : filteredData;
-});
+const totalLength = ref(0);
 
 window.addEventListener("keydown", (event) => {
   if (event.ctrlKey && event.key === "/") {
     document.querySelector("#search-bar").focus();
   }
 });
+
+function searchTermChanged(value) {
+  searchTermv.value = value;
+}
+function updateTotalLength(value){
+  totalLength.value = value;
+}
+function checkedChanged(value) {
+  checked.value = value;
+}
 </script>
 
 <template>
@@ -47,7 +35,7 @@ window.addEventListener("keydown", (event) => {
     <section class="max-w-6xl p-4 mx-auto">
       <!-- Header -->
       <Header
-        :opportunitiesData="opportunitiesData"
+        :totalLength="totalLength"
         :searchTerm="searchTerm"
         :checked="checked"
         @search-term="searchTermChanged"
@@ -55,12 +43,16 @@ window.addEventListener("keydown", (event) => {
       />
 
       <!-- No results found section -->
-      <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
+      <div v-if="totalLength == 0" class="py-12 space-y-20">
         <NoResultsFound :searchTerm="searchTerm" />
       </div>
 
       <!-- Opportunities List -->
-      <OpportunityList :opportunitiesData="opportunitiesData" />
+      <OpportunityList 
+        :totalLength="totalLength"
+        :search-term="searchTerm"
+        :checked="checked"
+        @updateTotalLength="updateTotalLength"/>
 
       <!-- Footer -->
       <Footer />
@@ -70,13 +62,5 @@ window.addEventListener("keydown", (event) => {
 
 <script>
 export default {
-  methods: {
-    searchTermChanged(value) {
-      this.searchTerm = value;
-    },
-    checkedChanged(value) {
-      this.checked = value;
-    },
-  },
 };
 </script>

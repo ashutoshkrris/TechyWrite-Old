@@ -24,7 +24,7 @@ import GitHubSVG from "../../assets/githubsvg.svg";
   <div class="flex flex-col md:flex-row items-center justify-between mb-6 px-3">
     <!-- toggle -->
     <div class="flex items-center justify-center mb-6">
-      <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
+      <h2 class="text-white mr-5">Total: {{ totalLength }}</h2>
       <button
         type="button"
         aria-pressed="false"
@@ -55,8 +55,8 @@ export default {
   name: "Header",
   emits: ["search-term", "checked-event"],
   props: {
-    opportunitiesData: {
-      type: Array,
+    totalLength: {
+      type: Number,
       required: true,
     },
     searchTerm: {
