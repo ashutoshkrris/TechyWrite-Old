@@ -5,6 +5,7 @@ import Twitter from "./assets/twitter.svg";
 import GitHub from "./assets/github.svg";
 import GitHubSVG from "./assets/githubsvg.svg";
 import NoResultsFound from "./components/404.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
 
 const checked = ref(false);
 const originalData = [...data];
@@ -15,9 +16,7 @@ const opportunitiesData = computed(() => {
   const filteredData = originalData.filter((data) => {
     return (
       data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.description
-        .toLowerCase()
-        .includes(searchTerm.value.toLowerCase()) ||
+      data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
       data.categories
         .toString()
         .toLowerCase()
@@ -57,6 +56,9 @@ window.addEventListener("keydown", (event) => {
 
 <template>
   <div class="bg-void min-h-screen">
+    <!-- Back to top button -->
+    <ScrollToTop />
+
     <section class="max-w-6xl p-4 mx-auto">
       <!-- header  -->
       <section class="flex flex-wrap justify-center gap-4 mb-5">
@@ -73,7 +75,7 @@ window.addEventListener("keydown", (event) => {
         target="_blank"
         rel="noopener"
       >
-        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG"/>
+        <img class="absolute top-0 right-0" :src="GitHubSVG" alt="Github SVG" />
       </a>
 
       <div
@@ -86,7 +88,7 @@ window.addEventListener("keydown", (event) => {
             type="button"
             aria-pressed="false"
             aria-labelledby="toggleLabel"
-            class="relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="toggle relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             :class="checked ? 'bg-psybeam' : 'bg-gray-300'"
             @click="checked = !checked"
           >
@@ -132,22 +134,23 @@ window.addEventListener("keydown", (event) => {
         </div>
       </div>
 
-
       <!-- No results found section -->
       <div v-if="opportunitiesData.length == 0" class="py-12 space-y-20">
         <div class="w-64 md:w-[20rem] mx-auto">
           <NoResultsFound />
         </div>
-        <div class="text-center space-y-4" style="margin-top:0px;">
+        <div class="text-center space-y-4" style="margin-top: 0px">
           <p class="text-white text-2xl md:text-2xl">
             Uh Oh! We couldn't find what you are looking for
           </p>
           <p class="text-gray-300 md:text-xl">
-            No search results matched your query "<strong>{{searchTerm}}</strong>".
+            No search results matched your query "<strong>{{
+              searchTerm
+            }}</strong
+            >".
           </p>
         </div>
       </div>
-
 
       <!-- list -->
       <ul class="gap-4 mx-auto mb-5">
@@ -156,18 +159,17 @@ window.addEventListener("keydown", (event) => {
           :key="opportunity.link"
           class="p-3 w-full h-full"
         >
-          <a :href="opportunity.link" target="_blank" rel="noopener">
             <div class="shadow-lg hover:shadow-xl">
               <div
-                class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
+                class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50 opportunity"
                 style="position: relative"
               >
                 <h2 class="flex rounded-2xl opportunity-type">
                   {{ opportunity.type }}
                 </h2>
                 <div class="flex items-center mb-3">
-                  <p class="opportunity-name font-semibold text-white">{{ opportunity.name }}</p
-                  >
+                  <a class="text-3xl font-semibold text-white" :href="opportunity.link" target="_blank"
+                    rel="noopener">{{ opportunity.name }}</a>
                 </div>
                 <div
                   class="flex justify-start mb-2"
@@ -249,9 +251,9 @@ window.addEventListener("keydown", (event) => {
                 </div>
               </div>
             </div>
-          </a>
         </li>
       </ul>
+
       <!-- footer -->
       <footer>
         <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8 space-y-8">
@@ -298,7 +300,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">Twitter</span>
-                <img class="w-[30px]" :src="Twitter" alt="Twitter logo">
+                <img class="w-[30px]" :src="Twitter" alt="Twitter logo" />
               </a>
 
               <a
@@ -308,7 +310,7 @@ window.addEventListener("keydown", (event) => {
                 rel="noopener"
               >
                 <span class="sr-only">GitHub</span>
-                <img :src="GitHub" alt="github"/>
+                <img :src="GitHub" alt="github" />
               </a>
             </div>
             <div class="mt-8 md:mt-0 md:order-1">
