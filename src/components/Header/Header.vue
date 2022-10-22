@@ -1,8 +1,3 @@
-<script setup>
-import SearchBar from "./components/SearchBar.vue";
-import GitHubSVG from "../../assets/githubsvg.svg";
-</script>
-
 <template>
   <section class="flex flex-wrap justify-center gap-4 mb-5">
     <img
@@ -31,7 +26,7 @@ import GitHubSVG from "../../assets/githubsvg.svg";
         aria-labelledby="toggleLabel"
         class="relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         :class="checked ? 'bg-psybeam' : 'bg-gray-300'"
-        @click="checkedChanged(!checked)"
+        @click="$emit('checked-event', !checked)"
       >
         <span class="sr-only">Use setting</span>
         <span
@@ -51,9 +46,10 @@ import GitHubSVG from "../../assets/githubsvg.svg";
 </template>
 
 <script>
+import GitHubSVG from '../../assets/GitHubSVG.svg';
+import SearchBar from "./components/SearchBar.vue";
 export default {
   name: "Header",
-  emits: ["search-term", "checked-event"],
   props: {
     opportunitiesData: {
       type: Array,
@@ -68,15 +64,11 @@ export default {
       required: true,
     },
   },
-
-  setup() {
-    const GitHubSVG = GitHubSVG;
-
-    return {
+  data(){
+    return{
       GitHubSVG,
-    };
+    }
   },
-
   methods: {
     searchTermChanged(value) {
       this.$emit("search-term", value);
@@ -85,5 +77,6 @@ export default {
       this.$emit("checked-event", value);
     },
   },
+  components: { SearchBar },
 };
 </script>
