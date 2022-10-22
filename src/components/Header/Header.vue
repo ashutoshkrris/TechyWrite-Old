@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import GitHubSVG from '../../assets/GitHubSVG.svg';
+import GitHubSVG from '../../assets/githubsvg.svg';
 import SearchBar from "./components/SearchBar.vue";
 export default {
   name: "Header",
