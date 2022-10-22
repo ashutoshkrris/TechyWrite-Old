@@ -1,11 +1,11 @@
 <script setup>
 import { computed, ref } from "vue";
-import data from "./data.json";
+import Footer from "./components/Footer/Footer.vue";
 import Header from "./components/Header/Header.vue";
 import NoResultsFound from "./components/NoResultsFound.vue";
-import ScrollToTop from "./components/ScrollToTop.vue";
 import OpportunityList from "./components/OpportunityList.vue";
-import Footer from "./components/Footer/Footer.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
+import data from "./data.json";
 
 const checked = ref(false);
 const originalData = [...data];
@@ -17,10 +17,7 @@ const opportunitiesData = computed(() => {
     return (
       data.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
       data.description.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
-      data.categories
-        .toString()
-        .toLowerCase()
-        .includes(searchTerm.value.toLowerCase())
+      data.categories.toString().toLowerCase().includes(searchTerm.value.toLowerCase())
     );
   });
 
@@ -50,8 +47,16 @@ window.addEventListener("keydown", (event) => {
         :opportunitiesData="opportunitiesData"
         :searchTerm="searchTerm"
         :checked="checked"
-        @search-term="searchTermChanged"
-        @checked-event="checkedChanged"
+        @search-term="
+          (val) => {
+            searchTerm = val;
+          }
+        "
+        @checked-event="
+          (val) => {
+            checked = val;
+          }
+        "
       />
 
       <!-- No results found section -->
@@ -67,16 +72,3 @@ window.addEventListener("keydown", (event) => {
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    searchTermChanged(value) {
-      this.searchTerm = value;
-    },
-    checkedChanged(value) {
-      this.checked = value;
-    },
-  },
-};
-</script>
