@@ -44,7 +44,7 @@ Run the app
 npm run dev
 ```
 
-## Adding an opportunity to the list
+## Adding a new opportunity to the list
 
 Found a paid technical writing opportunity we don't have yet? You can easily add it using the following steps:
 
@@ -70,6 +70,7 @@ Found a paid technical writing opportunity we don't have yet? You can easily add
 
 3. Once done you can now raise a Pull Request to the main branch<br>
 
+> Note: You can also create an issue to suggest a new source. Click [here](https://github.com/ashutoshkrris/TechyWrite/issues/new?assignees=&labels=%5Bnew-source%5D&template=new_source.yml&title=%5BNew+Source%5D%3A+) to create the issue.
 
 ## License
 
