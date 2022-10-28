@@ -1,0 +1,64 @@
+name: Add new source
+description: Create a PR to add new source
+title: '[New Source]: '
+labels: '[new-source]'
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to add a new source!
+  - type: checkboxes
+    attributes:
+      label: Does this source already exist?
+      description: Please search to see if someone has already suggested this source.
+      options:
+       - label: I have searched the existing sources.
+         required: true
+  - type: input
+    attributes:
+      label: Company Name
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Company Type
+      options: 
+        - Publication
+        - Publisher
+        - Agency
+      description: * "Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles.
+      * "Publisher" means a company that publishes books and pays royalties.
+      * "Agency" means a company that finds writers hourly or project work.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link
+      description: If possible, link directly to the company's "write for us" or "guest post" page. Otherwise, link to the publication's main page.
+    validations:
+      required: true    
+  - type: input
+    attributes:
+      label: Editor's Email
+      description: If the editor has a public email address that they invite prospective authors to contact them at, enter it here.
+  - type: input
+    attributes:
+      label: Topic(s)
+      description: General topics like Front-End Development, Back-End Development, Data Science, Infrastructure, etc.
+  - type: input
+    attributes:
+      label: Rate
+      description: The rate, in USD, that the company offers the writers. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as "100-200". For royalty structures, give a short description.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Description
+      description: Any other information you know about the publication.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/ashutoshkrris/TechyWrite/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
