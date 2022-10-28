@@ -25,13 +25,13 @@ body:
         - Publication
         - Publisher
         - Agency
-      description: "Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles. "Publisher" means a company that publishes books and pays royalties. "Agency" means a company that finds writers hourly or project work.
+      description: Publication means a blog (including corporate blogs), magazine, or newsletter that buys articles. Publisher means a company that publishes books and pays royalties. Agency means a company that finds writers hourly or project work.
     validations:
       required: true
   - type: input
     attributes:
       label: Link
-      description: If possible, link directly to the company's "write for us" or "guest post" page. Otherwise, link to the publication's main page.
+      description: If possible, link directly to the company's Write for Us or Guest Post page. Otherwise, link to the publication's main page.
     validations:
       required: true    
   - type: input
@@ -45,7 +45,7 @@ body:
   - type: input
     attributes:
       label: Rate
-      description: The rate, in USD, that the company offers the writers. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as "100-200". For royalty structures, give a short description.
+      description: The rate, in USD, that the company offers the writers. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as 100-200. For royalty structures, give a short description.
     validations:
       required: true
   - type: input
