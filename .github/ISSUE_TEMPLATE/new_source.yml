@@ -25,9 +25,7 @@ body:
         - Publication
         - Publisher
         - Agency
-      description: * "Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles.
-      * "Publisher" means a company that publishes books and pays royalties.
-      * "Agency" means a company that finds writers hourly or project work.
+      description: "Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles. "Publisher" means a company that publishes books and pays royalties. "Agency" means a company that finds writers hourly or project work.
     validations:
       required: true
   - type: input
