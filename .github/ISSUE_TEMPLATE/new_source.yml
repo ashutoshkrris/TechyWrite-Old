@@ -1,5 +1,5 @@
 name: Add new source
-description: Create a PR to add new source
+description: Create an issue to add new source
 title: '[New Source]: '
 labels: '[new-source]'
 body:
@@ -48,7 +48,7 @@ body:
       description: The rate, in USD, that the company offers the writers. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as 100-200. For royalty structures, give a short description.
     validations:
       required: true
-  - type: input
+  - type: textarea
     attributes:
       label: Description
       description: Any other information you know about the publication.
