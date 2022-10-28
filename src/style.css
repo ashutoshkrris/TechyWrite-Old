@@ -3,19 +3,19 @@
 }
 
 #search-bar {
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .scroll-top {
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .toggle {
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .opportunity {
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .opportunity-name {
@@ -27,8 +27,16 @@
   position: absolute;
   color: black;
   background-color: white;
-  top: 15px;
+  top: 35px;
   right: 18px;
+}
+
+.opportunity-category {
+  right: 10px;
+  bottom: 10px;
+  word-break: break-word;
+  margin-top: 10px;
+  justify-content: flex-end;
 }
 
 .icon {
@@ -61,4 +69,12 @@
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
+
+  /* .opportunity-category {
+    position: static;
+    right: 10px;
+    bottom: 10px;
+    word-break: break-word;
+    margin-top: 10px;
+  } */
 }
