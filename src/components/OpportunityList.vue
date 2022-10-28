@@ -7,22 +7,22 @@
     >
       <div class="shadow-lg hover:shadow-xl">
         <div
-          class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50"
+          class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50 "
           style="position: relative"
         >
-          <h2 class="flex rounded-2xl opportunity-type">
+          <h2 class="flex rounded-2xl opportunity-type text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 rounded-lg">
             {{ opportunity.type }}
           </h2>
-          <div class="flex items-center mb-3">
+          <div class="flex items-center mb-3 justify" style="white-space: normal; width: 70%;">
             <a
-              class="text-3xl font-semibold text-white"
+              class="text-2xl font-semibold text-white"
               :href="opportunity.link"
               target="_blank"
               rel="noopener"
               >{{ opportunity.name }}</a
             >
           </div>
-          <div class="flex justify-start mb-2" v-if="opportunity.description">
+          <div class="flex justify-start mb-2 mt-4" v-if="opportunity.description">
             <em class="bi bi-info-circle me-3 icon"></em>
             <h3 class="text-white" style="margin-top: 3px">
               {{ opportunity.description }}
@@ -32,7 +32,7 @@
           <div class="flex justify-start mb-2" v-if="opportunity.contact">
             <em class="bi bi-envelope me-3 icon"></em>
             <a :href="'mailto:' + opportunity.contact"
-              ><h3 class="text-white" style="margin-top: 3px">
+              ><h3 class="text-white" style="margin-top: 3px; word-break: break-all;">
                 {{ opportunity.contact }}
               </h3></a
             >
@@ -85,18 +85,18 @@
             >
               {{ opportunity.royaltyRate }}
             </h3>
-            <div
-              class="flex flex-row"
-              style="position: absolute; right: 10px; bottom: 10px"
+            
+          </div>
+          <div
+              class="flex opportunity-category justify-content-end flex-wrap"
             >
               <li v-for="i in opportunity.categories" v-bind:key="i">
                 <span
-                  class="bg-green-900 text-green-100 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 flex rounded-lg"
+                  class="bg-green-900 text-green-100 text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 flex rounded-lg mt-2"
                   >{{ i }}</span
                 >
               </li>
             </div>
-          </div>
         </div>
       </div>
     </li>
