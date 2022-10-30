@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import SortSVG from '../assets/sort.svg';
-
 export default {
   props: {
     options: {
