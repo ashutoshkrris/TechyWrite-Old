@@ -17,28 +17,10 @@
   </a>
 
   <div class="flex flex-col md:flex-row items-center justify-between mb-6 px-3">
-    <!-- toggle -->
-    <div class="flex items-center justify-center mb-6">
-      <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
-      <button
-        type="button"
-        aria-pressed="false"
-        aria-labelledby="toggleLabel"
-        class="relative inline-flex flex-shrink-0 h-6 transition-colors duration-200 ease-in-out border-2 border-transparent rounded-full cursor-pointer w-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        :class="checked ? 'bg-psybeam' : 'bg-gray-300'"
-        @click="$emit('checked-event', !checked)"
-      >
-        <span class="sr-only">Use setting</span>
-        <span
-          aria-hidden="true"
-          class="inline-block w-5 h-5 transition duration-200 ease-in-out transform bg-white rounded-full shadow ring-0"
-          :class="checked ? 'translate-x-5' : 'translate-x-0'"
-        ></span>
-      </button>
-      <span class="ml-3" id="toggleLabel">
-        <span class="text-sm font-medium text-white">Sort alphabetically</span>
-      </span>
-    </div>
+    <!-- sort dropdown -->
+    <sorting-dropdown @sorted-change="sortChanged"></sorting-dropdown>
+
+    <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
 
     <!-- Search bar -->
     <SearchBar @search-term="searchTermChanged" />
@@ -48,6 +30,7 @@
 <script>
 import GitHubSVG from '../../assets/githubsvg.svg';
 import SearchBar from "./components/SearchBar.vue";
+import SortingDropdown from '../SortingDropdown.vue';
 export default {
   name: "Header",
   props: {
@@ -76,7 +59,10 @@ export default {
     checkedChanged(value) {
       this.$emit("checked-event", value);
     },
+    sortChanged(value) {
+      this.$emit("sort-changed", value);
+    }
   },
-  components: { SearchBar },
+  components: { SearchBar, SortingDropdown },
 };
 </script>

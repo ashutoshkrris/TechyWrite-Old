@@ -8,6 +8,8 @@ import ScrollToTop from "./components/ScrollToTop.vue";
 import data from "./data.json";
 
 const checked = ref(false);
+const sortingParam = ref("Alphabetically");
+const sortingOrder = ref("ASC");
 const originalData = [...data];
 const searchTerm = ref("");
 
@@ -24,16 +26,38 @@ const opportunitiesData = computed(() => {
   // sort filtered data
   const sortedFilteredData = filteredData
     .slice()
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => comparator(a, b));
 
-  return checked.value ? sortedFilteredData : filteredData;
+  return sortedFilteredData
 });
+
+const comparator = (a, b) => {
+  switch(sortingParam.value) {
+    case "Alphabetically":
+      if (sortingOrder.value == "ASC") {
+        return a.name.localeCompare(b.name)
+      } else {
+        return b.name.localeCompare(a.name)
+      }
+    case "Rating":
+    if (sortingOrder.value == "ASC") {
+        return a.minRate ?? 0 - b.minRate ?? 0
+      } else {
+        return b.minRate ?? 0 - a.minRate ?? 0
+      }
+  }
+}
 
 window.addEventListener("keydown", (event) => {
   if (event.ctrlKey && event.key === "/") {
     document.querySelector("#search-bar").focus();
   }
 });
+
+const sortChanged = (sorting) => {
+  sortingParam.value = sorting.sort
+  sortingOrder.value = sorting.order
+};
 </script>
 
 <template>
@@ -52,6 +76,7 @@ window.addEventListener("keydown", (event) => {
             searchTerm = val;
           }
         "
+        @sort-changed="sortChanged"
         @checked-event="
           (val) => {
             checked = val;
