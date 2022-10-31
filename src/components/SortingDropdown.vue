@@ -29,7 +29,6 @@ export default {
   },
   data() {
     return {
-      SortSVG,
       selectedParamSorting: "Alphabetically",
       selectedOrderSorting: "ASC",
       dropdownShow: false,
