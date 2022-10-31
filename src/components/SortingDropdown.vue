@@ -1,9 +1,14 @@
 <template>
-  <div class="text-white flex items-center">
+  <div>
+    <div class="text-white flex items-center">
     <button @click='toggleShow' class='text-base rounded text-white bg-green-600 border-green-600 flex items-center justify-center py-3 px-6 hover:text-white hover:bg-green-700 hover:border-green-700 hover:cursor-pointer'>
       Sort By
     </button>
-    <ul v-if='dropdownShow'
+    
+    <span class="text-xl ml-3">{{ selectedOrderSorting }}</span>
+
+  </div>
+  <ul v-if='dropdownShow'
       class='flex flex-col text-left rounded text-gray-900 cursor-pointer text-base absolute border-2 border-solid border-gray-900'>
       <template :key="sort.label + index" v-for="(sort, index) in sorting">
         <div 
@@ -17,9 +22,8 @@
         </div>
       </template>
     </ul>
-    <span class="text-xl ml-3">{{ selectedOrderSorting }}</span>
-
   </div>
+  
 </template>
 
 <script>
