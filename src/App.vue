@@ -9,7 +9,7 @@ import data from "./data.json";
 
 const checked = ref(false);
 const sortingParam = ref("Alphabetically");
-const sortingOrder = ref("ASC");
+const sortingOrder = ref("A-Z");
 const originalData = [...data];
 const searchTerm = ref("");
 
@@ -34,13 +34,13 @@ const opportunitiesData = computed(() => {
 const comparator = (a, b) => {
   switch(sortingParam.value) {
     case "Alphabetically":
-      if (sortingOrder.value == "ASC") {
+      if (sortingOrder.value == "A-Z") {
         return a.name.localeCompare(b.name)
       } else {
         return b.name.localeCompare(a.name)
       }
-    case "Rating":
-    if (sortingOrder.value == "ASC") {
+    case "Rate":
+    if (sortingOrder.value == "Low to High") {
         return a.minRate ?? 0 - b.minRate ?? 0
       } else {
         return b.minRate ?? 0 - a.minRate ?? 0

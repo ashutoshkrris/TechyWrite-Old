@@ -20,10 +20,11 @@
     <!-- sort dropdown -->
     <sorting-dropdown @sorted-change="sortChanged"></sorting-dropdown>
 
-    <h2 class="text-white mr-5">Total: {{ opportunitiesData.length }}</h2>
-
     <!-- Search bar -->
-    <SearchBar @search-term="searchTermChanged" />
+    <div class="flex items-center">
+      <SearchBar @search-term="searchTermChanged" />
+      <h2 class="text-white mr-5">{{ opportunitiesData.length }} Opportunities</h2>
+    </div>
   </div>
 </template>
 
