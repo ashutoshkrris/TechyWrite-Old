@@ -40,7 +40,7 @@
 
           <hr
             v-if="
-              opportunity.description &&
+              (opportunity.description || opportunity.contact) &&
               (opportunity.maxRate ||
                 opportunity.hourlyMaxRate ||
                 opportunity.royaltyRate)
