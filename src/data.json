@@ -3,9 +3,7 @@
     "name": "CSS Tricks",
     "type": "Publication",
     "link": "https://css-tricks.com/guest-writing-for-css-tricks/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development"
-    ],
+    "categories": ["Front-End Development"],
     "minRate": 300,
     "maxRate": 400,
     "description": ""
@@ -79,9 +77,7 @@
     "name": "Auth0",
     "type": "Publication",
     "link": "https://auth0.com/apollo-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Authentication"
-    ],
+    "categories": ["Authentication"],
     "maxRate": 450,
     "description": "Articles must implement some part of the Auth0 spec in any programming language. The program offers swag gifts to multi-time authors."
   },
@@ -89,9 +85,7 @@
     "name": "CircleCI",
     "type": "Publication",
     "link": "https://circleci.com/blog/guest-writer-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure"
-    ],
+    "categories": ["Infrastructure"],
     "maxRate": 325,
     "description": "Also provides physical CircleCI swag with your first post."
   },
@@ -99,11 +93,7 @@
     "name": "Dev Spotlight",
     "type": "Agency",
     "link": "https://www.devspotlight.com/jobs/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "DevOps",
-      "Full-Stack Development"
-    ],
+    "categories": ["Infrastructure", "DevOps", "Full-Stack Development"],
     "maxRate": 600,
     "contact": "info@devspotlight.com",
     "description": "Pay may far exceed $600 based on scope & experience. Requires proven technical expertise plus writing skills."
@@ -112,10 +102,7 @@
     "name": "Digital Ocean",
     "type": "Publication",
     "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Open Source"
-    ],
+    "categories": ["Infrastructure", "Open Source"],
     "minRate": 300,
     "maxRate": 400,
     "description": "Matches payments with donations to tech-focused charities. Further opportunities for paid updates to existing tutorials."
@@ -124,9 +111,7 @@
     "name": "Fauna",
     "type": "Publication",
     "link": "https://fauna.com/blog/write-with-fauna?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development"
-    ],
+    "categories": ["Full-Stack Development"],
     "maxRate": 350,
     "description": "Must use FaunaDB. Also provides Fauna swag to authors."
   },
@@ -134,9 +119,7 @@
     "name": "Fly",
     "type": "Publication",
     "link": "https://github.com/superfly/fly#write-for-fly?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure"
-    ],
+    "categories": ["Infrastructure"],
     "maxRate": 150,
     "description": ""
   },
@@ -145,18 +128,14 @@
     "type": "Publication",
     "link": "https://www.honeybadger.io/blog/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "maxRate": 500,
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "description": "Developer-friendly writing and editing process using Markdown and GitHub. Only accepts Ruby, PHP, JS content."
   },
   {
     "name": "Infantica",
     "type": "Publication",
     "link": "https://infatica.io/contribute/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Web Scraping"
-    ],
+    "categories": ["Web Scraping"],
     "maxRate": 100,
     "description": "Also donates to tech-focused charities for articles."
   },
@@ -164,10 +143,7 @@
     "name": "Linode",
     "type": "Publication",
     "link": "https://www.linode.com/lp/write-for-linode/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Open Source"
-    ],
+    "categories": ["Infrastructure", "Open Source"],
     "maxRate": 300,
     "description": "Known to pay much higher rates to trusted repeat authors. Further opportunities for paid updates to existing tutorials."
   },
@@ -175,9 +151,7 @@
     "name": "LogRocket",
     "type": "Publication",
     "link": "https://blog.logrocket.com/become-a-logrocket-guest-author-7d970eb673f9/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development"
-    ],
+    "categories": ["Front-End Development"],
     "maxRate": 350,
     "contact": "brian@logrocket.com",
     "description": ""
@@ -187,9 +161,7 @@
     "type": "Publication",
     "link": "https://lwn.net/op/AuthorGuide.lwn?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "maxRate": 300,
-    "categories": [
-      "Linux News"
-    ],
+    "categories": ["Linux News"],
     "contact": "authors@lwn.net",
     "description": "Authors retain copyright, CC BY-SA 4.0 after 2 weeks exclusivity. Experienced authors and ambitious projects earn more."
   },
@@ -197,9 +169,7 @@
     "name": "Make Use Of",
     "type": "Publication",
     "link": "https://www.makeuseof.com/contributor/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Consumer Tech"
-    ],
+    "categories": ["Consumer Tech"],
     "maxRate": 120,
     "description": ""
   },
@@ -207,9 +177,7 @@
     "name": "Paperspace",
     "type": "Publication",
     "link": "https://blog.paperspace.com/write-for-paperspace/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "minRate": 200,
     "maxRate": 300,
     "description": ""
@@ -218,9 +186,7 @@
     "name": "PHP Architect",
     "type": "Publication",
     "link": "https://www.phparch.com/editorial/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "maxRate": 175,
     "description": ""
   },
@@ -228,9 +194,7 @@
     "name": "Postmark",
     "type": "Publication",
     "link": "https://postmarkapp.com/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "minRate": 200,
     "maxRate": 300,
     "description": ""
@@ -239,22 +203,14 @@
     "name": "Real Python",
     "type": "Publication",
     "link": "https://realpython.com/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development",
-      "Programming",
-      "Soft Skills"
-    ],
+    "categories": ["Back-End Development", "Programming", "Soft Skills"],
     "description": "Site calls working with them a \"significant time commitment\" for a \"paid part-time position.\""
   },
   {
     "name": "SitePoint",
     "type": "Publication",
     "link": "https://www.sitepoint.com/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development",
-      "No-Code Tools",
-      "Design"
-    ],
+    "categories": ["Front-End Development", "No-Code Tools", "Design"],
     "minRate": 150,
     "maxRate": 300,
     "description": "SitePoint is a well-established publication with different editors for different categories, with varying requirements. Large projects pay more."
@@ -263,10 +219,7 @@
     "name": "Smashing Magazine",
     "type": "Publication",
     "link": "https://www.smashingmagazine.com/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development",
-      "Design"
-    ],
+    "categories": ["Front-End Development", "Design"],
     "maxRate": 200,
     "description": "Smashing pays $250 for articles after your first. They also have conference speaking and long-form content opportunities."
   },
@@ -282,10 +235,7 @@
     "name": "TakeShape",
     "type": "Publication",
     "link": "https://www.takeshape.io/jobs/contributing-writer/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development",
-      "Interviews"
-    ],
+    "categories": ["Front-End Development", "Interviews"],
     "maxRate": 300,
     "description": ""
   },
@@ -293,10 +243,7 @@
     "name": "TechWell",
     "type": "Publication",
     "link": "https://www.techwell.com/techwell-submission-guidelines?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Soft Skills"
-    ],
+    "categories": ["DevOps", "Soft Skills"],
     "maxRate": 200,
     "description": ""
   },
@@ -304,9 +251,7 @@
     "name": "TestDriven.io",
     "type": "Publication",
     "link": "https://testdriven.io/join-testdriven/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development"
-    ],
+    "categories": ["Full-Stack Development"],
     "minRate": 300,
     "maxRate": 500,
     "description": "Pays $75 to $150 for updates and improvements to existing content."
@@ -315,9 +260,7 @@
     "name": "WonderProxy",
     "type": "Publication",
     "link": "https://wonderproxy.com/blog/looking-for-authors/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Testing"
-    ],
+    "categories": ["Testing"],
     "minRate": 350,
     "maxRate": 500,
     "description": ""
@@ -334,21 +277,14 @@
     "name": "Envato Tuts+",
     "type": "Publication",
     "link": "https://tutsplus.com/teach?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Programming",
-      "Design"
-    ],
+    "categories": ["Programming", "Design"],
     "description": "Also buys video courses of 30 minutes or longer."
   },
   {
     "name": "Twilio",
     "type": "Publication",
     "link": "https://www.twilio.com/voices?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development",
-      "APIs",
-      "Infrastructure"
-    ],
+    "categories": ["Full-Stack Development", "APIs", "Infrastructure"],
     "maxRate": 500,
     "description": "Most tutorials involve one or more of Twilio's APIs."
   },
@@ -356,9 +292,7 @@
     "name": "Vonage",
     "type": "Publication",
     "link": "https://developer.nexmo.com/spotlight#submit-your-idea?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development"
-    ],
+    "categories": ["Full-Stack Development"],
     "maxRate": 500,
     "description": "Posts should feature one or more Vonage products."
   },
@@ -366,9 +300,7 @@
     "name": "WPHUB",
     "type": "Publication",
     "link": "https://wphub.com/about-us/#Become_a_Guest_Author?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Wordpress"
-    ],
+    "categories": ["Wordpress"],
     "minRate": 100,
     "maxRate": 200,
     "description": ""
@@ -377,9 +309,7 @@
     "name": "Zift",
     "type": "Publication",
     "link": "https://wezift.com/write-for-zift/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Parenting and Technology"
-    ],
+    "categories": ["Parenting and Technology"],
     "maxRate": 100,
     "contact": "editorial@wezift.com",
     "description": ""
@@ -396,9 +326,7 @@
     "name": "Hasura",
     "type": "Publication",
     "link": "https://hasura.io/blog/the-hasura-technical-writer-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "maxRate": 300,
     "description": "Tutorials must include the Hasura GraphQL engine."
   },
@@ -406,10 +334,7 @@
     "name": "Arctype",
     "type": "Publication",
     "link": "https://blog.arctype.com/contribute/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development",
-      "Data Science"
-    ],
+    "categories": ["Back-End Development", "Data Science"],
     "maxRate": 150,
     "contact": "derek@arctype.com",
     "description": "May provide additional bonuses for well-performing posts."
@@ -419,11 +344,7 @@
     "type": "Agency",
     "link": "https://draft.dev/#write?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "karl@draft.dev",
-    "categories": [
-      "Full-Stack Development",
-      "Data Science",
-      "DevOps"
-    ],
+    "categories": ["Full-Stack Development", "Data Science", "DevOps"],
     "minRate": 315,
     "maxRate": 578,
     "description": "Available categories are sent out every week and writers can claim any they're a good fit for."
@@ -442,9 +363,7 @@
     "type": "Publication",
     "link": "https://neptune.ai/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "guestwriters@neptune.ai",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "minRate": 200,
     "maxRate": 500,
     "description": "Also pays $50-150 for non-technical blog posts."
@@ -453,10 +372,7 @@
     "name": "SUSE Writers Network (SUSE Rancher)",
     "type": "Publication",
     "link": "https://www.suse.com/writing-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Infrastructure"
-    ],
+    "categories": ["DevOps", "Infrastructure"],
     "maxRate": 300,
     "description": ""
   },
@@ -473,10 +389,7 @@
     "name": "Tech Beacon",
     "type": "Publication",
     "link": "https://techbeacon.com/aboutus?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Infrastructure"
-    ],
+    "categories": ["DevOps", "Infrastructure"],
     "maxRate": 400,
     "description": "The \"write for us\" page is currently behind an authentication barrier."
   },
@@ -492,9 +405,7 @@
     "name": "Vultr",
     "type": "Publication",
     "link": "https://www.vultr.com/docs/vultr-docs-program-guidelines?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure"
-    ],
+    "categories": ["Infrastructure"],
     "minRate": 150,
     "maxRate": 600,
     "description": ""
@@ -503,9 +414,7 @@
     "name": "Agora",
     "type": "Publication",
     "link": "https://www.agora.io/en/agora-content-contributor-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "APIs"
-    ],
+    "categories": ["APIs"],
     "maxRate": 250,
     "description": "Bonus swag and payment based on signups from your article."
   },
@@ -513,9 +422,7 @@
     "name": "DeepSource",
     "type": "Publication",
     "link": "https://deepsource.io/tech-writer/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps"
-    ],
+    "categories": ["DevOps"],
     "contact": "tech-writer@deepsource.io",
     "maxRate": 150,
     "description": ""
@@ -524,9 +431,7 @@
     "name": "Sanity.io",
     "type": "Publication",
     "link": "https://www.sanity.io/guest-authorship?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development"
-    ],
+    "categories": ["Front-End Development"],
     "maxRate": 250,
     "description": "Article categories should relate to the Sanity.io platform."
   },
@@ -534,9 +439,7 @@
     "name": "ImageKit",
     "type": "Publication",
     "link": "https://imagekit.io/blog/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure"
-    ],
+    "categories": ["Infrastructure"],
     "maxRate": 300,
     "description": "Accepts articles on ImageKit technologies and web image optimization."
   },
@@ -545,9 +448,7 @@
     "type": "Publication",
     "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "igor@cube.dev",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "maxRate": 300,
     "description": "Provides a list of suggested categories."
   },
@@ -555,11 +456,7 @@
     "name": "Wizard on Demand",
     "type": "Agency",
     "link": "https://wizardondemand.com?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Full-Stack Development",
-      "Data Science"
-    ],
+    "categories": ["Infrastructure", "Full-Stack Development", "Data Science"],
     "contact": "workwithus@wizardondemand.com",
     "hourlyMaxRate": 15,
     "description": "Connect and collaborate with other writers, get detailed feedback from our editors, and learn from our subject matter experts."
@@ -569,9 +466,7 @@
     "type": "Publication",
     "link": "https://www.nbshare.io/new-post/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "johnludhi@outlook.com",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "minRate": 100,
     "maxRate": 150,
     "description": "Publishes Jupyter-style data science notebooks."
@@ -580,11 +475,7 @@
     "name": "Adeva",
     "type": "Publication",
     "link": "https://adevait.com/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "DevOps",
-      "Soft Skills"
-    ],
+    "categories": ["Infrastructure", "DevOps", "Soft Skills"],
     "maxRate": 200,
     "description": "Looking for technical guides, thought leadership content, and resources for Engineering Managers."
   },
@@ -593,9 +484,7 @@
     "type": "Publication",
     "link": "https://editmode.com?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "tony@editmode.com",
-    "categories": [
-      "APIs"
-    ],
+    "categories": ["APIs"],
     "maxRate": 150,
     "description": "Articles must implement some part of the Editmode API or client libraries in any programming language."
   },
@@ -604,10 +493,7 @@
     "type": "Publication",
     "link": "https://www.raywenderlich.com/11455688-write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "annette@raywenderlich.com",
-    "categories": [
-      "Mobile Development",
-      "Back-End Development"
-    ],
+    "categories": ["Mobile Development", "Back-End Development"],
     "maxRate": 400,
     "description": "Focuses on Swift and Unity. Rigorous multi-stage editing process, strong community. Formats also include books, video courses, and more."
   },
@@ -616,9 +502,7 @@
     "type": "Publication",
     "link": "https://codesubmit.io/blog/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "dom@codesubmit.io",
-    "categories": [
-      "Technical Interviews"
-    ],
+    "categories": ["Technical Interviews"],
     "maxRate": 250,
     "description": ""
   },
@@ -626,20 +510,14 @@
     "name": "Bejamas",
     "type": "Agency",
     "link": "https://bejamas.io/paid-writing-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development",
-      "JAMstack"
-    ],
+    "categories": ["Front-End Development", "JAMstack"],
     "description": "Payment varies by project scope"
   },
   {
     "name": "Hygraph (formerly GraphCMS)",
     "type": "Publication",
     "link": "https://hygraph.com/write-for-hygraph?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development",
-      "Back-End Development"
-    ],
+    "categories": ["Front-End Development", "Back-End Development"],
     "description": "Payment varies by article. Pitches should include Hygraph."
   },
   {
@@ -658,9 +536,7 @@
     "name": "Magic Link",
     "type": "Publication",
     "link": "https://magic-fortmatic.typeform.com/to/Wgzsocor?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "maxRate": 300,
     "description": "Must use magic.link auth API in articles."
   },
@@ -668,9 +544,7 @@
     "name": "Appsmith",
     "type": "Publication",
     "link": "https://blog.appsmith.com/launching-the-appsmith-writers-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development"
-    ],
+    "categories": ["Back-End Development"],
     "minRate": 200,
     "maxRate": 400,
     "description": "Must include Appsmith technologies in the tutorial."
@@ -679,9 +553,7 @@
     "name": "QuickNode",
     "type": "Publication",
     "link": "https://quicknode.notion.site/quicknode/QuickNode-Authorship-Program-d808a87ee50b48c9a16ed19b13e09115?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Crypto"
-    ],
+    "categories": ["Crypto"],
     "maxRate": 350,
     "description": "Tutorials should cover building with one or more web3 technologies."
   },
@@ -690,9 +562,7 @@
     "type": "Publication",
     "link": "https://okteto.com/tech-writer/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "writers@okteto.com",
-    "categories": [
-      "Kubernetes"
-    ],
+    "categories": ["Kubernetes"],
     "maxRate": 200,
     "description": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto."
   },
@@ -701,10 +571,7 @@
     "type": "Publication",
     "link": "https://blog.warrant.dev?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "hello@warrant.dev",
-    "categories": [
-      "Back-End Development",
-      "Authentication"
-    ],
+    "categories": ["Back-End Development", "Authentication"],
     "maxRate": 100,
     "description": ""
   },
@@ -712,9 +579,7 @@
     "name": "SQL Shack",
     "type": "Publication",
     "link": "https://www.sqlshack.com/about-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "SQL"
-    ],
+    "categories": ["SQL"],
     "maxRate": 200,
     "description": "Microsoft SQL Server only, 1250+ words plus code samples, 3 images per article."
   },
@@ -722,9 +587,7 @@
     "name": "Alan AI",
     "type": "Publication",
     "link": "https://docs.google.com/forms/d/e/1FAIpQLSfLGZO7fDt4OGIWVjNYIStkXrog3teq19qmeFErujQOtoWfFA/viewform?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "minRate": 50,
     "maxRate": 250,
     "description": "Aricles must relate to Alan AI platform."
@@ -733,10 +596,7 @@
     "name": "Ambassador Labs",
     "type": "Publication",
     "link": "https://www.getambassador.io/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Kubernetes",
-      "Open Source"
-    ],
+    "categories": ["Kubernetes", "Open Source"],
     "maxRate": 300,
     "description": ""
   },
@@ -744,10 +604,7 @@
     "name": "Airbyte",
     "type": "Publication",
     "link": "https://airbyte.com/write-for-the-community?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Open Source"
-    ],
+    "categories": ["Infrastructure", "Open Source"],
     "maxRate": 900,
     "description": "Articles must feature Airbyte integrations."
   },
@@ -756,10 +613,7 @@
     "type": "Publication",
     "contact": "hello@webapp.io",
     "link": "https://webapp.io/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Full-Stack Development"
-    ],
+    "categories": ["Infrastructure", "Full-Stack Development"],
     "maxRate": 150,
     "description": ""
   },
@@ -767,11 +621,7 @@
     "name": "Magalix",
     "type": "Publication",
     "link": "https://www.magalix.com/the-sac-writers-club?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Open Source",
-      "DevOps",
-      "Infrastructure"
-    ],
+    "categories": ["Open Source", "DevOps", "Infrastructure"],
     "maxRate": 200,
     "description": ""
   },
@@ -779,9 +629,7 @@
     "name": "OneSignal",
     "type": "Publication",
     "link": "https://onesignal.com/guest-author-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Mobile Development"
-    ],
+    "categories": ["Mobile Development"],
     "maxRate": 350,
     "description": ""
   },
@@ -789,10 +637,7 @@
     "name": "Mattermost",
     "type": "Publication",
     "link": "https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/community-content-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Full-Stack Development"
-    ],
+    "categories": ["DevOps", "Full-Stack Development"],
     "minRate": 250,
     "maxRate": 350,
     "description": "The docs mention that exceptionally detailed content about prevalent technologies can earn up to $500."
@@ -802,10 +647,7 @@
     "type": "Publication",
     "link": "https://www.colabra.app/blog/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "hello@colabra.app",
-    "categories": [
-      "Lab Management",
-      "Data Science"
-    ],
+    "categories": ["Lab Management", "Data Science"],
     "minRate": 300,
     "maxRate": 600,
     "description": "Lab science, not computer science."
@@ -815,10 +657,7 @@
     "type": "Publication",
     "link": "https://cloudcannon.com/blog/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "olivia@cloudcannon.com",
-    "categories": [
-      "Front-End Development",
-      "JAMstack"
-    ],
+    "categories": ["Front-End Development", "JAMstack"],
     "maxRate": 300,
     "description": "Hiring for one-off pieces or continuous writing opportunities."
   },
@@ -826,10 +665,7 @@
     "name": "The Bot Forge",
     "type": "Publication",
     "link": "https://www.thebotforge.io/guest-authors/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Data Science",
-      "Artificial Intelligence"
-    ],
+    "categories": ["Data Science", "Artificial Intelligence"],
     "maxRate": 200,
     "description": "Focus on conversational AI"
   },
@@ -837,10 +673,7 @@
     "name": "Civo",
     "type": "Publication",
     "link": "https://www.civo.com/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Kubernetes"
-    ],
+    "categories": ["Infrastructure", "Kubernetes"],
     "minRate": 300,
     "maxRate": 500,
     "description": ""
@@ -849,11 +682,7 @@
     "name": "Enlear",
     "type": "Agency",
     "link": "https://www.enlear.com/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development",
-      "Programming",
-      "Open Source"
-    ],
+    "categories": ["Full-Stack Development", "Programming", "Open Source"],
     "minRate": 50,
     "maxRate": 150,
     "description": "Enlear also offers opportunities for content strategy and editorial roles."
@@ -862,9 +691,7 @@
     "name": "Figment",
     "type": "Publication",
     "link": "https://www.notion.so/Contributing-to-Figment-Learn-d8ff9cdc32ca4b58838d81d07eab49bd?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Crypto"
-    ],
+    "categories": ["Crypto"],
     "minRate": 100,
     "maxRate": 1000,
     "description": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials."
@@ -873,9 +700,7 @@
     "name": "MSSQL Tips",
     "type": "Publication",
     "link": "https://www.mssqltips.com/contribute/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "SQL"
-    ],
+    "categories": ["SQL"],
     "maxRate": 160,
     "description": "Microsoft SQL Server only."
   },
@@ -884,11 +709,7 @@
     "type": "Publication",
     "link": "https://codingsight.com?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "marketing@devart.com",
-    "categories": [
-      "SQL",
-      "Back-End Development",
-      "Infrastructure"
-    ],
+    "categories": ["SQL", "Back-End Development", "Infrastructure"],
     "minRate": 100,
     "maxRate": 250,
     "description": "Send proposals directly to the listed contact."
@@ -897,9 +718,7 @@
     "name": "Hashnode",
     "type": "Publication",
     "link": "https://web3.hashnode.com/contribute-to-the-web3-blog?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Crypto"
-    ],
+    "categories": ["Crypto"],
     "minRate": 150,
     "maxRate": 400,
     "description": "Warning: asks for an unpaid prompted 300-word writing sample during the application."
@@ -908,11 +727,7 @@
     "name": "Simple Talk",
     "type": "Publication",
     "link": "https://www.red-gate.com/simple-talk/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "SQL",
-      "Back-End Development",
-      "DevOps"
-    ],
+    "categories": ["SQL", "Back-End Development", "DevOps"],
     "maxRate": 350,
     "description": ""
   },
@@ -920,10 +735,7 @@
     "name": "SigNoz",
     "type": "Publication",
     "link": "https://signoz.io/technical-writer-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Infrastructure"
-    ],
+    "categories": ["DevOps", "Infrastructure"],
     "maxRate": 150,
     "description": ""
   },
@@ -932,10 +744,7 @@
     "type": "Publication",
     "link": "https://buttercms.com/blog/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "jessica@buttercms.com",
-    "categories": [
-      "DevOps",
-      "Full-Stack Development"
-    ],
+    "categories": ["DevOps", "Full-Stack Development"],
     "minRate": 250,
     "maxRate": 350,
     "description": ""
@@ -945,11 +754,7 @@
     "type": "Publication",
     "link": "https://medusajs.notion.site/Write-for-us-74a2bf43b4ce43eeba200382f599321a?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "shahed@medusajs.com",
-    "categories": [
-      "Back-End Development",
-      "Ecommerce",
-      "Open Source"
-    ],
+    "categories": ["Back-End Development", "Ecommerce", "Open Source"],
     "minRate": 100,
     "maxRate": 200,
     "description": "Will help guide your writing and have our own internal technical writer assist you"
@@ -959,11 +764,7 @@
     "type": "Publication",
     "link": "https://blog.viswiz.io?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "blog@viswiz.io",
-    "categories": [
-      "Front-End Development",
-      "Back-End Development",
-      "Testing"
-    ],
+    "categories": ["Front-End Development", "Back-End Development", "Testing"],
     "minRate": 200,
     "maxRate": 300,
     "description": ""
@@ -972,10 +773,7 @@
     "name": "CodeCov",
     "type": "Publication",
     "link": "https://about.codecov.io/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "DevOps",
-      "Testing"
-    ],
+    "categories": ["DevOps", "Testing"],
     "maxRate": 500,
     "description": ""
   },
@@ -984,11 +782,7 @@
     "type": "Publication",
     "link": "https://earthly.dev/blog/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "support@earthly.dev",
-    "categories": [
-      "Open Source",
-      "Back-End Development",
-      "Infrastructure"
-    ],
+    "categories": ["Open Source", "Back-End Development", "Infrastructure"],
     "maxRate": 350,
     "description": "Articles will be promoted on their Twitter account and posted to Hacker News."
   },
@@ -996,10 +790,7 @@
     "name": "Initial Commit",
     "type": "Publication",
     "link": "https://initialcommit.com/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development",
-      "Programming"
-    ],
+    "categories": ["Full-Stack Development", "Programming"],
     "maxRate": 62.5,
     "description": ""
   },
@@ -1007,9 +798,7 @@
     "name": "Solace",
     "type": "Publication",
     "link": "https://solace.com/scholars/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "APIs"
-    ],
+    "categories": ["APIs"],
     "maxRate": 300,
     "description": "Articles must feature Solace technologies."
   },
@@ -1017,11 +806,7 @@
     "name": "Content Turbine",
     "type": "Agency",
     "link": "https://www.contentturbine.com/freelance?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Data Science",
-      "Programming",
-      "Artificial Intelligence"
-    ],
+    "categories": ["Data Science", "Programming", "Artificial Intelligence"],
     "minRate": 250,
     "maxRate": 300,
     "description": ""
@@ -1030,10 +815,7 @@
     "name": "Cohesive",
     "type": "Publication",
     "link": "https://cohesiveso.notion.site/Cohesive-Writers-Program-114332379ec8444f8ca0ee774b805253?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "Kubernetes"
-    ],
+    "categories": ["Infrastructure", "Kubernetes"],
     "minRate": 200,
     "maxRate": 500,
     "description": ""
@@ -1042,9 +824,7 @@
     "name": "Webiny",
     "type": "Publication",
     "link": "https://www.webiny.com/docs/write-with-webiny/write-with-webiny?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Front-End Development"
-    ],
+    "categories": ["Front-End Development"],
     "maxRate": 200,
     "description": "Webiny is an open source serverless CMS."
   },
@@ -1052,10 +832,7 @@
     "name": "RunX",
     "type": "Publication",
     "link": "https://blog.runx.dev/announcing-runxs-technical-writer-program-ea3790f0a80?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Infrastructure",
-      "DevOps"
-    ],
+    "categories": ["Infrastructure", "DevOps"],
     "minRate": 150,
     "maxRate": 200,
     "description": "Seeking tutorials on Opta, pays an extra 100 dollars for Opta tutorials that hit 1000 views in 4 weeks."
@@ -1064,9 +841,7 @@
     "name": "Hevo",
     "type": "Publication",
     "link": "https://community.hevodata.com/write-for-hevo?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Data Science"
-    ],
+    "categories": ["Data Science"],
     "maxRate": 100,
     "description": ""
   },
@@ -1074,9 +849,7 @@
     "name": "Codiga",
     "type": "Publication",
     "link": "https://www.codiga.io/write-for-us/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Programming"
-    ],
+    "categories": ["Programming"],
     "minRate": 100,
     "maxRate": 150,
     "description": "Asks authors to publish content on the author's own site, which Codiga will then promote."
@@ -1086,10 +859,7 @@
     "type": "Publication",
     "link": "https://github.com/kili-technology/kili-blogger-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "theo.dullin@kili-technology.com",
-    "categories": [
-      "Data Science",
-      "Machine Learning"
-    ],
+    "categories": ["Data Science", "Machine Learning"],
     "minRate": 100,
     "maxRate": 200,
     "description": ""
@@ -1099,9 +869,7 @@
     "type": "Publication",
     "link": "https://blog.appsignal.com/write-for-us?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "editorial@appsignal.com",
-    "categories": [
-      "Full-Stack Development"
-    ],
+    "categories": ["Full-Stack Development"],
     "maxRate": 300,
     "description": "Mid-level to senior content on Node.js, Elixir, and Ruby."
   },
@@ -1109,10 +877,7 @@
     "name": "Sweetcode",
     "type": "Publication",
     "link": "https://sweetcode.io/join-community/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Full-Stack Development",
-      "DevOps"
-    ],
+    "categories": ["Full-Stack Development", "DevOps"],
     "maxRate": 150,
     "description": ""
   },
@@ -1120,10 +885,7 @@
     "name": "Syntropy",
     "type": "Publication",
     "link": "https://www.syntropystack.com/writers?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Crypto",
-      "DevOps"
-    ],
+    "categories": ["Crypto", "DevOps"],
     "minRate": 250,
     "maxRate": 650,
     "description": ""
@@ -1147,9 +909,7 @@
     "type": "Publication",
     "link": "https://learn.codesee.io/guest-author-program/?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "josh@codesee.io",
-    "categories": [
-      "Programming"
-    ],
+    "categories": ["Programming"],
     "maxRate": 500,
     "description": "Looking for content on CodeSee tools, technical reviews, and code quality"
   },
@@ -1158,10 +918,7 @@
     "type": "Publication",
     "link": "https://forms.gle/EJvfgLGivUzFMfcY9?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
     "contact": "team@memphis.dev",
-    "categories": [
-      "Back-End Development",
-      "Full-Stack Development"
-    ],
+    "categories": ["Back-End Development", "Full-Stack Development"],
     "minRate": 500,
     "maxRate": 800,
     "description": "Write in-depth pieces relevant to memphis.dev in Go"
@@ -1170,10 +927,7 @@
     "name": "neverinstall",
     "type": "Publication",
     "link": "https://blog.neverinstall.com/neverinstall-technical-writer-program?utm_source=referral&utm_medium=aggregator&utm_campaign=techywrite.vercel.app",
-    "categories": [
-      "Back-End Development",
-      "DevOps"
-    ],
+    "categories": ["Back-End Development", "DevOps"],
     "minRate": 100,
     "maxRate": 250,
     "description": "neverinstall offers a way to stream apps to browser and seeks relevant technical content"
@@ -1184,10 +938,25 @@
     "type": "Agency",
     "hourlyMaxRate": "30 - 40",
     "description": "Requires prior experience and will provide training prior to joining",
-    "categories": [
-      "Science",
-      "Biotech",
-      "Pharmaceutical"
-    ]
+    "categories": ["Science", "Biotech", "Pharmaceutical"]
+  },
+  {
+    "name": "TransactionLink",
+    "link": "https://transactionlink.io",
+    "type": "Publication",
+    "contact": "hello@transactionlink.io",
+    "categories": ["Back-End Development", "DevOps", "Infrastructure"],
+    "minRate": 300,
+    "maxRate": 500,
+    "description": ""
+  },
+  {
+    "name": "NimbleBox.ai",
+    "type": "Publication",
+    "link": "https://nimblebox.ai/technical-writer-program",
+    "contact": "rugman@nimblebox.ai",
+    "topics": ["Machine Learning", "Data Science", "MLOps"],
+    "maxRate": "50",
+    "description": ""
   }
 ]
