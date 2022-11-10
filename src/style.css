@@ -37,6 +37,7 @@
   word-break: break-word;
   margin-top: 10px;
   justify-content: flex-end;
+  margin-right: -8px;
 }
 
 .icon {

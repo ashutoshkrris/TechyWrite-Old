@@ -10,10 +10,10 @@
           class="flex rounded-lg h-full bg-gray-800 bg-opacity-30 p-8 flex-col hover:bg-opacity-50 "
           style="position: relative"
         >
-          <h2 class="flex rounded-2xl opportunity-type text-xs font-semibold mr-2 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 rounded-lg">
+          <h2 class="flex rounded-2xl opportunity-type text-xs font-semibold mr-4 px-2.5 py-0.5 dark:bg-green-700 dark:text-green-100 rounded-lg">
             {{ opportunity.type }}
           </h2>
-          <div class="flex items-center mb-3 justify" style="white-space: normal; width: 70%;">
+          <div class="flex items-center mb-3 justify" style="white-space: normal; width: 60%; word-break: break-word;">
             <a
               class="text-2xl font-semibold text-white"
               :href="opportunity.link"

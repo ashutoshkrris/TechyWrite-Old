@@ -955,7 +955,7 @@
     "type": "Publication",
     "link": "https://nimblebox.ai/technical-writer-program",
     "contact": "rugman@nimblebox.ai",
-    "topics": ["Machine Learning", "Data Science", "MLOps"],
+    "categories": ["Machine Learning", "Data Science", "MLOps"],
     "maxRate": "50",
     "description": ""
   }
