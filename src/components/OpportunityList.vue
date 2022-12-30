@@ -156,7 +156,9 @@
 
 <style scoped lang="scss">
 .pagination-container {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pagination {
