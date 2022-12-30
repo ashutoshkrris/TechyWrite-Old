@@ -26,4 +26,4 @@ _Please delete options that are not relevant._
 
 # Event
 
-- [ ] Hacktoberfest 2021
+- [ ] Hacktoberfest 2022
