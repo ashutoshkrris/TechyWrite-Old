@@ -130,6 +130,19 @@
     animation: octocat-wave 560ms ease-in-out;
   }
 
+  .page-link {
+    font-size: 8px;
+  }
+
+  .opportunity-category {
+    right: 10px;
+    bottom: 10px;
+    word-break: break-word;
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-right: -8px;
+  }
+  
   /* .opportunity-category {
     position: static;
     right: 10px;

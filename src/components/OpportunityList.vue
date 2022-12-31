@@ -23,7 +23,7 @@
             style="white-space: normal; width: 60%; word-break: break-word"
           >
             <a
-              class="text-2xl font-semibold text-white"
+              class="text-[15px] sm:text-2xl font-semibold text-white"
               :href="opportunity.link"
               target="_blank"
               rel="noopener"
