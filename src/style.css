@@ -130,19 +130,6 @@
     animation: octocat-wave 560ms ease-in-out;
   }
 
-  .page-link {
-    font-size: 8px;
-  }
-
-  .opportunity-category {
-    right: 10px;
-    bottom: 10px;
-    word-break: break-word;
-    margin-top: 10px;
-    justify-content: flex-start;
-    margin-right: -8px;
-  }
-  
   /* .opportunity-category {
     position: static;
     right: 10px;
@@ -150,4 +137,25 @@
     word-break: break-word;
     margin-top: 10px;
   } */
+
+  .pagination {
+    background: rgb(31 41 55/var(--tw-bg-opacity));
+    margin: 0px;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    align-content: center;
+    border-radius: 0.5rem;
+  }
+
+  .page-link {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 10px;
+  }
 }
