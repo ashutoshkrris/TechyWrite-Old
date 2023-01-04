@@ -965,7 +965,7 @@
     "link": "https://handbook.novu.co/write-for-us",
     "contact": "sumit@novu.co",
     "categories": ["Open Source", "Notifications", "Front-End Development"],
-    "minRate": "100"
+    "minRate": "100",
     "maxRate": "200",
     "description": "Novu is a constantly growing open-source platform that is built by developers for developers. By writing for Novu, not only can you get more attention to your content but also make some money on the side. It’s a win-win!"
   }
