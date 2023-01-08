@@ -166,8 +166,11 @@ export default {
     return {
       page: 1,
       pageSize: 10,
-      pages: [],
+      pages: [1],
     };
+  },
+  created() {
+    this.updatePages(); // Update pages when component is created
   },
   computed: {
     totalPages() {
@@ -193,20 +196,36 @@ export default {
     },
     updatePages() {
       this.pages = [];
-      if (this.page > 3) {
-        this.pages.push(1);
-        this.pages.push("...");
+
+      // Add page numbers before current page
+      for (let i = this.page - 2; i < this.page; i++) {
+        if (i > 0) {
+          this.pages.push(i);
+        }
       }
-      for (
-        let i = Math.max(1, this.page - 2);
-        i <= Math.min(this.totalPages, this.page + 2);
-        i++
-      ) {
-        this.pages.push(i);
+
+      // Add current page
+      this.pages.push(this.page);
+
+      // Add page numbers after current page
+      for (let i = this.page + 1; i < this.page + 3; i++) {
+        if (i <= this.totalPages) {
+          this.pages.push(i);
+        }
       }
-      if (this.page < this.totalPages - 2) {
-        this.pages.push("...");
-        this.pages.push(this.totalPages);
+
+      // Add remaining page numbers if necessary
+      while (this.pages.length < 5) {
+        if (this.pages[0] > 1) {
+          // Add page numbers before current page if possible
+          this.pages.unshift(this.pages[0] - 1);
+        } else if (this.pages[this.pages.length - 1] < this.totalPages) {
+          // Add page numbers after current page if possible
+          this.pages.push(this.pages[this.pages.length - 1] + 1);
+        } else {
+          // All possible page numbers have been added
+          break;
+        }
       }
     },
   },
